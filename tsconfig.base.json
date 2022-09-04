@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ronas-it/tfjs-node-helpers": ["packages/tfjs-node-helpers/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

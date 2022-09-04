@@ -4,13 +4,30 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@tensorflow/tfjs-node": "3.19.0",
+    "chalk": "^4.1.2",
+    "console-table-printer": "^2.11.1",
+    "tslib": "^2.3.0"
+  },
   "devDependencies": {
     "@nrwl/cli": "14.5.4",
+    "@nrwl/eslint-plugin-nx": "14.5.4",
+    "@nrwl/jest": "14.5.4",
     "@nrwl/js": "14.5.4",
+    "@nrwl/linter": "14.5.4",
     "@nrwl/workspace": "14.5.4",
+    "@types/jest": "27.4.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "27.5.1",
     "nx": "14.5.4",
     "prettier": "^2.6.2",
+    "ts-jest": "27.1.4",
+    "ts-node": "~10.8.0",
     "typescript": "~4.7.2"
   }
 }
