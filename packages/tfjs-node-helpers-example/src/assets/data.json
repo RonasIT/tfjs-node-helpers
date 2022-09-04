@@ -1,0 +1,7002 @@
+[
+  {
+    "id": 385,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 20000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 681,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 43500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 353,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 74000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 895,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 107500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 661,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 846,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 33500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 219,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 132500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 588,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 64000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 85,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 84500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 465,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 686,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 408,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 23000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 790,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 116,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 118,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 108000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 54,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 149000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 90,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 372,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 53000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 926,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 79000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 94,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 134000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 338,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 51500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 134,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 39000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 821,
+    "gender": "Male",
+    "age": 54,
+    "annual_salary": 25500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 294,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 597,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 117500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 567,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 58000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 20,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 107000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 108,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 97500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 105,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 29000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 994,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 147500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 273,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 26000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 263,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 423,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 62000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 88,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 79500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 81,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 113500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 257,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 41500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 755,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 249,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 114500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 121,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 73000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 489,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 15000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 555,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 37500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 222,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 39500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 590,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 645,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 689,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 86000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 646,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 964,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 384,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 123000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 826,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 48500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 27,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 268,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 99500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 466,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 411,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 130000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 445,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 428,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 43500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 974,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 36000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 828,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 21500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 348,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 98500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 730,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 820,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 147000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 917,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 109500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 15,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 26500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 365,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 88000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 674,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 30,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 58000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 531,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 22000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 190,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 160,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 129000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 371,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 45000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 321,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 42000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 230,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 40500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 819,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 37500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 965,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 86500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 351,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 63000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 266,
+    "gender": "Male",
+    "age": 58,
+    "annual_salary": 41500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 629,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 115500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 891,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 311,
+    "gender": "Male",
+    "age": 34,
+    "annual_salary": 32500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 439,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 106500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 861,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 53500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 510,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 28000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 277,
+    "gender": "Male",
+    "age": 53,
+    "annual_salary": 151500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 417,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 88500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 123,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 17000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 912,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 76000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 667,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 136500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 435,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 120500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 722,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 35500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 892,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 279,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 18500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 500,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 50000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 684,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 144500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 414,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 51000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 349,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 38500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 456,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 103500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 485,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 151500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 960,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 75500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 233,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 17000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 191,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 87000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 471,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 977,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 84000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 120,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 88000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 126,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 23,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 42000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 225,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 16000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 772,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 21500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 398,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 367,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 29500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 511,
+    "gender": "Female",
+    "age": 18,
+    "annual_salary": 44000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 775,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 109500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 324,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 43500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 829,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 30000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 478,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 58000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 546,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 83000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 942,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 108500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 571,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 112000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 375,
+    "gender": "Male",
+    "age": 59,
+    "annual_salary": 143000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 905,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 136500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 132,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 438,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 972,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 107000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 596,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 99000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 395,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 663,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 41000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 903,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 23500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 25,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 34500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 599,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 563,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 23000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 607,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 137000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 928,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 144000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 453,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 24500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 509,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 203,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 88000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 450,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 573,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 662,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 89000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 651,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 19,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 31500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 634,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 647,
+    "gender": "Male",
+    "age": 62,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 693,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 78500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 728,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 520,
+    "gender": "Male",
+    "age": 57,
+    "annual_salary": 72500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 213,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 114500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 142,
+    "gender": "Male",
+    "age": 22,
+    "annual_salary": 89500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 322,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 540,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 743,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 73000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 887,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 241,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 32000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 701,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 848,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 33000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 782,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 877,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 74000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 924,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 79000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 83,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 144000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 369,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 16500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 579,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 121500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 583,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 89000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 919,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 39500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 957,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 135000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 973,
+    "gender": "Female",
+    "age": 63,
+    "annual_salary": 110500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 521,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 90000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 41,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 78500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 42,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 136500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 327,
+    "gender": "Male",
+    "age": 58,
+    "annual_salary": 61500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 347,
+    "gender": "Female",
+    "age": 22,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 148,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 96000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 443,
+    "gender": "Female",
+    "age": 63,
+    "annual_salary": 48500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 700,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 28000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 738,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 527,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 87000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 742,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 81000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 175,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 134500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 335,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 120500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 996,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 378,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 82000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 655,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 74500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 104,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 23000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 221,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 125000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 786,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 536,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 460,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 19000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 710,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 106500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 524,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 36500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 890,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 70000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 46,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 109500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 95,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 78,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 110500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 402,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 40500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 264,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 143500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 34,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 522,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 118000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 156,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 19000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 850,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 99,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 90500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 462,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 979,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 46500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 432,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 65500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 69,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 25000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 943,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 83000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 381,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 958,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 954,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 612,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 88000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 267,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 90500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 785,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 133500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 557,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 49000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 935,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 32000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 805,
+    "gender": "Male",
+    "age": 62,
+    "annual_salary": 132500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 554,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 144500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 990,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 132500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 345,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 82000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 172,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 63500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 429,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 16500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 948,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 64500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 89,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 95000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 139,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 43500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 332,
+    "gender": "Male",
+    "age": 21,
+    "annual_salary": 50500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 70,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 42500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 868,
+    "gender": "Female",
+    "age": 19,
+    "annual_salary": 87500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 747,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 542,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 882,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 744,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 498,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 78500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 934,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 146500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 253,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 105500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 620,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 64500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 778,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 796,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 532,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 45500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 242,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 33000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 504,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 29500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 569,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 149500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 1000,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 76500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 401,
+    "gender": "Female",
+    "age": 62,
+    "annual_salary": 90500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 229,
+    "gender": "Male",
+    "age": 57,
+    "annual_salary": 60000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 91,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 74000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 135,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 31000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 906,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 104000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 605,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 90500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 613,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 92500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 196,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 167,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 34000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 698,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 98500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 565,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 90500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 669,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 715,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 258,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 38000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 604,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 28500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 517,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 37500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 228,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 36500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 987,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 20500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 885,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 36500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 415,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 83500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 357,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 110500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 254,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 235,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 24500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 282,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 128,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 703,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 60000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 131,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 119,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 73500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 921,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 136500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 881,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 36500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 182,
+    "gender": "Male",
+    "age": 21,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 112,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 127500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 342,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 88500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 397,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 35,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 53000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 145,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 941,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 150500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 736,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 68,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 641,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 116500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 668,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 673,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 768,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 117,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 75000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 633,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 418,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 44000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 993,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 139000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 902,
+    "gender": "Male",
+    "age": 58,
+    "annual_salary": 75500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 331,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 119500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 918,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 29500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 622,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 131000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 86,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 88500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 392,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 89000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 162,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 978,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 624,
+    "gender": "Male",
+    "age": 57,
+    "annual_salary": 61500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 640,
+    "gender": "Male",
+    "age": 56,
+    "annual_salary": 133000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 26,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 47000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 741,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 704,
+    "gender": "Male",
+    "age": 34,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 199,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 27500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 130,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 149500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 179,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 29500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 427,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 141000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 275,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 81500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 330,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 77000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 813,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 32500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 390,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 774,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 113000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 469,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 28000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 652,
+    "gender": "Male",
+    "age": 55,
+    "annual_salary": 71500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 729,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 79500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 648,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 82000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 92,
+    "gender": "Female",
+    "age": 25,
+    "annual_salary": 33500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 904,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 82500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 614,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 98500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 756,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 137000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 316,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 113500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 325,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 78000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 953,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 34000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 675,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 18500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 373,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 51000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 879,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 806,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 36000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 770,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 43500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 387,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 98500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 394,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 43500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 911,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 140500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 922,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 419,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 24500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 426,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 10,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 64500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 547,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 79500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 174,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 25000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 467,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 91500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 502,
+    "gender": "Male",
+    "age": 57,
+    "annual_salary": 134500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 553,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 19500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 293,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 89000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 719,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 96500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 759,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 740,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 136500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 87,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 85000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 753,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 49500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 389,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 792,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 783,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 487,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 51500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 84,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 74000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 59,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 51500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 153,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 106000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 920,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 31500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 535,
+    "gender": "Male",
+    "age": 63,
+    "annual_salary": 104500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 883,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 41000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 750,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 71500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 320,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 143500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 458,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 89500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 396,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 15000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 416,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 69500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 575,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 63500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 659,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 114500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 208,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 534,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 88500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 97,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 47500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 628,
+    "gender": "Female",
+    "age": 62,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 682,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 30000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 970,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 70500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 496,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 762,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 80500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 495,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 52500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 574,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 34500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 514,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 873,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 21500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 867,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 272,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 79500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 383,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 24500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 178,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 27500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 739,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 44000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 47,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 48500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 625,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 801,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 615,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 606,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 206,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 139500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 997,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 143500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 216,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 898,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 45000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 77,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 70000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 529,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 133000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 769,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 845,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 92500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 239,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 104000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 459,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 87000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 949,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 76000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 552,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 42000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 317,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 692,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 683,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 92500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 209,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 148500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 187,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 170,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 28000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 244,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 88000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 512,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 30000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 679,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 838,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 151500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 224,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 51500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 600,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 808,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 85500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 171,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 147500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 220,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 116000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 956,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 936,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 333,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 71500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 854,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 58,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 81500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 716,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 91500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 773,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 135500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 835,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 84500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 350,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 164,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 18000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 379,
+    "gender": "Female",
+    "age": 62,
+    "annual_salary": 31500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 637,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 149000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 841,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 34500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 205,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 243,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 89000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 361,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 269,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 57500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 31,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 745,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 880,
+    "gender": "Male",
+    "age": 63,
+    "annual_salary": 36500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 938,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 36000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 910,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 25000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 284,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 33500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 71,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 46500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 143,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 90500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 452,
+    "gender": "Male",
+    "age": 21,
+    "annual_salary": 88000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 252,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 34000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 810,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 541,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 68000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 237,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 931,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 112000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 664,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 89500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 616,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 57500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 566,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 45500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 853,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 169,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 107000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 472,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 865,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 85500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 791,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 146000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 878,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 271,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 148500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 763,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 32000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 98,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 621,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 113,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 576,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 103500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 862,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 139500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 896,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 32,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 50000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 871,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 50500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 944,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 84500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 888,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 127500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 761,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 90000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 533,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 23000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 245,
+    "gender": "Male",
+    "age": 23,
+    "annual_salary": 19500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 102,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 16500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 961,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 976,
+    "gender": "Female",
+    "age": 19,
+    "annual_salary": 26000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 685,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 120000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 2,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 63500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 858,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 82500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 434,
+    "gender": "Female",
+    "age": 19,
+    "annual_salary": 69500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 849,
+    "gender": "Female",
+    "age": 22,
+    "annual_salary": 63000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 66,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 106500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 795,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 46500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 876,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 843,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 131500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 537,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 51000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 851,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 47000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 163,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 146500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 141,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 105500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 339,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 262,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 210,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 130500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 261,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 114500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 720,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 25500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 725,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 430,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 425,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 29500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 506,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 37000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 421,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 39500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 157,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 24500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 214,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 46000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 149,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 24500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 609,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 123500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 754,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 69000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 259,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 17500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 309,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 126500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 246,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 50000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 5,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 108500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 138,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 140,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 80500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 236,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 94500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 777,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 138000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 708,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 96000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 765,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 334,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 22000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 198,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 18000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 852,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 117000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 490,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 548,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 22,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 131500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 587,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 96,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 690,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 40500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 463,
+    "gender": "Male",
+    "age": 56,
+    "annual_salary": 74500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 799,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 39000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 194,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 131000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 836,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 63000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 314,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 138500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 43,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 146000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 913,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 29000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 72,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 85500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 975,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 72500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 270,
+    "gender": "Male",
+    "age": 23,
+    "annual_salary": 63000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 315,
+    "gender": "Male",
+    "age": 56,
+    "annual_salary": 40500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 176,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 49,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 91500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 36,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 26500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 297,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 84000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 985,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 40500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 158,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 658,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 58000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 341,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 66000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 718,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 83500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 550,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 91500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 901,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 151,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 26000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 285,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 96000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 570,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 833,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 24500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 127,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 81500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 76,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 109500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 915,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 70000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 549,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 50000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 217,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 51500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 582,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 29500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 694,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 86000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 186,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 27000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 518,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 135500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 513,
+    "gender": "Female",
+    "age": 20,
+    "annual_salary": 22500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 147,
+    "gender": "Male",
+    "age": 21,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 491,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 135500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 889,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 51500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 907,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 21500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 601,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 132500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 875,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 455,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 135500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 526,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 86000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 568,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 21500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 75,
+    "gender": "Male",
+    "age": 23,
+    "annual_salary": 82500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 930,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 41000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 38,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 713,
+    "gender": "Female",
+    "age": 19,
+    "annual_salary": 21000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 515,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 62000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 146,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 18000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 991,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 38500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 377,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 227,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 406,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 28000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 21,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 809,
+    "gender": "Male",
+    "age": 54,
+    "annual_salary": 70000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 630,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 39000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 507,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 92500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 107,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 97500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 966,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 150000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 481,
+    "gender": "Female",
+    "age": 62,
+    "annual_salary": 78500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 816,
+    "gender": "Female",
+    "age": 25,
+    "annual_salary": 90500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 893,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 986,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 58000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 967,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 22000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 982,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 48500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 803,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 23000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 9,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 33500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 822,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 89500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 360,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 108000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 200,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 610,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 96000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 593,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 584,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 925,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 105500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 410,
+    "gender": "Male",
+    "age": 22,
+    "annual_salary": 18000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 717,
+    "gender": "Male",
+    "age": 18,
+    "annual_salary": 82000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 33,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 115,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 556,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 636,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 947,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 16000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 929,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 442,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 159,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 959,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 90000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 152,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 23000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 256,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 296,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 35000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 37,
+    "gender": "Female",
+    "age": 22,
+    "annual_salary": 27000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 144,
+    "gender": "Male",
+    "age": 53,
+    "annual_salary": 72000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 764,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 51,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 523,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 399,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 71500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 61,
+    "gender": "Male",
+    "age": 59,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 329,
+    "gender": "Male",
+    "age": 24,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 165,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 362,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 195,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 135500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 950,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 83000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 644,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 125000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 188,
+    "gender": "Female",
+    "age": 25,
+    "annual_salary": 28500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 787,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 86500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 493,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 53,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 42000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 409,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 124500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 260,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 108000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 3,
+    "gender": "Male",
+    "age": 20,
+    "annual_salary": 74000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 223,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 344,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 24500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 18,
+    "gender": "Male",
+    "age": 63,
+    "annual_salary": 44500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 109,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 118500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 864,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 474,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 793,
+    "gender": "Male",
+    "age": 55,
+    "annual_salary": 39000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 632,
+    "gender": "Female",
+    "age": 18,
+    "annual_salary": 86000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 300,
+    "gender": "Female",
+    "age": 18,
+    "annual_salary": 68000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 323,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 84500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 847,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 85000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 326,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 204,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 619,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 19500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 727,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 25000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 136,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 468,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 82500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 706,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 483,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 114500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 298,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 89000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 897,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 144000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 386,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 74000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 447,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 105500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 677,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 52500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 304,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 108500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 380,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 89500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 914,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 49000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 538,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 31000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 650,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 702,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 7,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 134000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 305,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 22500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 393,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 100500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 780,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 654,
+    "gender": "Male",
+    "age": 22,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 870,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 115500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 866,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 82500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 12,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 90500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 137,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 89500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 101,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 93500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 623,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 42500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 290,
+    "gender": "Male",
+    "age": 34,
+    "annual_salary": 112000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 45,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 17000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 234,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 82500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 307,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 562,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 124500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 376,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 711,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 25500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 6,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 45500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 788,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 42000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 643,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 33000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 310,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 34500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 530,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 31500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 318,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 42500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 859,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 84500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 336,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 709,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 60000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 278,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 91500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 413,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 90500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 749,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 594,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 45500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 366,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 201,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 525,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 666,
+    "gender": "Female",
+    "age": 19,
+    "annual_salary": 45500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 29,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 40500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 665,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 444,
+    "gender": "Female",
+    "age": 26,
+    "annual_salary": 84000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 57,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 88500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 746,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 54000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 834,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 80000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 995,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 11,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 653,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 60000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 358,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 101500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 79,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 91000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 671,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 872,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 672,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 8,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 26000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 129,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 105000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 328,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 77000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 161,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 368,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 89500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 499,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 23000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 308,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 50000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 771,
+    "gender": "Male",
+    "age": 28,
+    "annual_salary": 89500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 180,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 33500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 44,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 142500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 265,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 855,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 363,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 32500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 840,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 999,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 131500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 17,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 133,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 65500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 955,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 101500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 894,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 117000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 503,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 73000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 869,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 102000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 48,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 135000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 617,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 76000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 874,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 128500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 578,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 312,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 23500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 110,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 113500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 13,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 734,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 113000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 670,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 603,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 189,
+    "gender": "Male",
+    "age": 44,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 559,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 226,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 146500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 837,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 114000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 346,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 733,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 126000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 306,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 448,
+    "gender": "Male",
+    "age": 59,
+    "annual_salary": 135500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 585,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 726,
+    "gender": "Male",
+    "age": 23,
+    "annual_salary": 20000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 391,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 56,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 286,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 122000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 482,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 30500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 595,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 142000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 100,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 24500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 807,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 111,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 41500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 939,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 27500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 215,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 28500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 449,
+    "gender": "Male",
+    "age": 34,
+    "annual_salary": 115000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 55,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 87500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 288,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 118500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 817,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 97500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 543,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 83000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 752,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 51000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 516,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 115500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 856,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 50,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 53000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 627,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 657,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 4,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 119000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 433,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 113000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 238,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 142500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 940,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 193,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 80,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 988,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 784,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 143000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 475,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 109500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 240,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 82000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 969,
+    "gender": "Female",
+    "age": 25,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 580,
+    "gender": "Male",
+    "age": 18,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 945,
+    "gender": "Male",
+    "age": 58,
+    "annual_salary": 144000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 74,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 486,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 20000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 937,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 422,
+    "gender": "Male",
+    "age": 59,
+    "annual_salary": 62500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 359,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 47500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 446,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 37500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 231,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 85500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 688,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 16500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 370,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 49500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 699,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 77500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 122,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 44500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 183,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 484,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 126500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 431,
+    "gender": "Male",
+    "age": 63,
+    "annual_salary": 44500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 697,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 72500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 678,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 20000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 899,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 88000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 28,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 104000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 313,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 251,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 68000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 93,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 87500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 125,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 30500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 811,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 97500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 923,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 74500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 352,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 55000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 635,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 124500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 519,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 32000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 551,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 374,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 62500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 461,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 714,
+    "gender": "Female",
+    "age": 22,
+    "annual_salary": 17500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 776,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 95500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 295,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 55500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 276,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 116500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 602,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 18500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 825,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 119500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 705,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 65500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 364,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 528,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 64500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 103,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 134000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 60,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 141000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 480,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 119500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 73,
+    "gender": "Male",
+    "age": 60,
+    "annual_salary": 76500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 301,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 839,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 79500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 400,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 15000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 340,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 22500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 691,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 27500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 247,
+    "gender": "Female",
+    "age": 43,
+    "annual_salary": 144500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 64,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 80500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 24,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 93000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 842,
+    "gender": "Male",
+    "age": 30,
+    "annual_salary": 80000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 497,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 831,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 22000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 436,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 48000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 67,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 50000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 737,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 23500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 983,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 87500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 218,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 54000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 166,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 454,
+    "gender": "Male",
+    "age": 59,
+    "annual_salary": 130000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 437,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 732,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 118000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 281,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 827,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 66000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 589,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 38000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 723,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 84500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 909,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 544,
+    "gender": "Male",
+    "age": 61,
+    "annual_salary": 146500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 992,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 34500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 638,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 127500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 812,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 28500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 403,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 656,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 35000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 250,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 63500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 564,
+    "gender": "Male",
+    "age": 21,
+    "annual_salary": 87500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 598,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 90000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 62,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 20500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 40,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 86000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 767,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 202,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 591,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 108000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 207,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 696,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 83500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 984,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 586,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 626,
+    "gender": "Female",
+    "age": 37,
+    "annual_salary": 33000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 724,
+    "gender": "Male",
+    "age": 54,
+    "annual_salary": 73500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 354,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 53500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 884,
+    "gender": "Male",
+    "age": 56,
+    "annual_salary": 60000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 758,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 150500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 545,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 119500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 908,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 61000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 248,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 82000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 355,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 63500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 289,
+    "gender": "Male",
+    "age": 35,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 804,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 618,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 77000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 916,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 292,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 118500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 488,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 49000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 52,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 71000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 815,
+    "gender": "Female",
+    "age": 23,
+    "annual_salary": 28500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 473,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 58500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 337,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 47000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 639,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 148500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 932,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 76500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 274,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 23500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 451,
+    "gender": "Male",
+    "age": 31,
+    "annual_salary": 108500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 63,
+    "gender": "Female",
+    "age": 55,
+    "annual_salary": 140500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 291,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 41500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 155,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 47000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 751,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 106500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 860,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 60000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 789,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 303,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 91500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 232,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 118000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 181,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 30000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 560,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 66500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 343,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 123500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 501,
+    "gender": "Female",
+    "age": 57,
+    "annual_salary": 122000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 464,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 31500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 319,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 75500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 952,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 356,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 64500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 779,
+    "gender": "Male",
+    "age": 45,
+    "annual_salary": 22000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 14,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 192,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 35500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 581,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 26500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 494,
+    "gender": "Female",
+    "age": 22,
+    "annual_salary": 69500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 981,
+    "gender": "Male",
+    "age": 37,
+    "annual_salary": 34500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 412,
+    "gender": "Female",
+    "age": 61,
+    "annual_salary": 97500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 505,
+    "gender": "Female",
+    "age": 33,
+    "annual_salary": 60000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 16,
+    "gender": "Male",
+    "age": 55,
+    "annual_salary": 152500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 508,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 54500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 211,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 818,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 35500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 823,
+    "gender": "Female",
+    "age": 32,
+    "annual_salary": 117000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 106,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 19500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 900,
+    "gender": "Female",
+    "age": 21,
+    "annual_salary": 83500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 561,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 72500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 797,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 72000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 989,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 27000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 558,
+    "gender": "Female",
+    "age": 51,
+    "annual_salary": 140500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 441,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 963,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 21000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 457,
+    "gender": "Male",
+    "age": 34,
+    "annual_salary": 43000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 802,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 106500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 470,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 28000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 707,
+    "gender": "Female",
+    "age": 59,
+    "annual_salary": 102500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 712,
+    "gender": "Female",
+    "age": 29,
+    "annual_salary": 47000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 283,
+    "gender": "Female",
+    "age": 50,
+    "annual_salary": 49500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 280,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 75500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 388,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 61500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 781,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 608,
+    "gender": "Male",
+    "age": 43,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 766,
+    "gender": "Male",
+    "age": 57,
+    "annual_salary": 74000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 177,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 109500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 404,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 139500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 968,
+    "gender": "Female",
+    "age": 34,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 212,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 141500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 539,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 886,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 107500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 748,
+    "gender": "Female",
+    "age": 41,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 735,
+    "gender": "Male",
+    "age": 50,
+    "annual_salary": 90500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 173,
+    "gender": "Female",
+    "age": 56,
+    "annual_salary": 145500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 592,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 57000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 255,
+    "gender": "Male",
+    "age": 40,
+    "annual_salary": 78000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 824,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 34500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 631,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 90000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 197,
+    "gender": "Male",
+    "age": 36,
+    "annual_salary": 33000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 405,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 138000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 798,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 54000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 185,
+    "gender": "Male",
+    "age": 51,
+    "annual_salary": 76500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 492,
+    "gender": "Male",
+    "age": 49,
+    "annual_salary": 65000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 731,
+    "gender": "Male",
+    "age": 46,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 980,
+    "gender": "Male",
+    "age": 27,
+    "annual_salary": 20000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 660,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 52500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 479,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 97000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 680,
+    "gender": "Male",
+    "age": 47,
+    "annual_salary": 34000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 830,
+    "gender": "Female",
+    "age": 52,
+    "annual_salary": 38000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 150,
+    "gender": "Female",
+    "age": 49,
+    "annual_salary": 30500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 760,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 26500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 857,
+    "gender": "Male",
+    "age": 26,
+    "annual_salary": 80500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 927,
+    "gender": "Female",
+    "age": 38,
+    "annual_salary": 34500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 154,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 50500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 1,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 100000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 933,
+    "gender": "Female",
+    "age": 40,
+    "annual_salary": 75000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 424,
+    "gender": "Female",
+    "age": 42,
+    "annual_salary": 81500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 814,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 62500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 184,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 83500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 962,
+    "gender": "Male",
+    "age": 52,
+    "annual_salary": 150000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 611,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 133500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 114,
+    "gender": "Male",
+    "age": 41,
+    "annual_salary": 52000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 39,
+    "gender": "Male",
+    "age": 19,
+    "annual_salary": 83500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 721,
+    "gender": "Male",
+    "age": 29,
+    "annual_salary": 148000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 642,
+    "gender": "Female",
+    "age": 58,
+    "annual_salary": 101000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 844,
+    "gender": "Female",
+    "age": 36,
+    "annual_salary": 48500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 440,
+    "gender": "Male",
+    "age": 63,
+    "annual_salary": 85500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 577,
+    "gender": "Female",
+    "age": 35,
+    "annual_salary": 44000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 757,
+    "gender": "Male",
+    "age": 22,
+    "annual_salary": 81000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 65,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 32000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 124,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 794,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 15000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 998,
+    "gender": "Female",
+    "age": 60,
+    "annual_salary": 77500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 287,
+    "gender": "Male",
+    "age": 32,
+    "annual_salary": 59500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 82,
+    "gender": "Female",
+    "age": 46,
+    "annual_salary": 23500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 695,
+    "gender": "Female",
+    "age": 39,
+    "annual_salary": 79000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 946,
+    "gender": "Male",
+    "age": 39,
+    "annual_salary": 60500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 676,
+    "gender": "Male",
+    "age": 42,
+    "annual_salary": 54000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 649,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 87000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 477,
+    "gender": "Female",
+    "age": 45,
+    "annual_salary": 77500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 572,
+    "gender": "Male",
+    "age": 48,
+    "annual_salary": 33000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 832,
+    "gender": "Female",
+    "age": 31,
+    "annual_salary": 71000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 302,
+    "gender": "Male",
+    "age": 33,
+    "annual_salary": 121500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 420,
+    "gender": "Female",
+    "age": 27,
+    "annual_salary": 84000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 971,
+    "gender": "Male",
+    "age": 25,
+    "annual_salary": 56500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 382,
+    "gender": "Female",
+    "age": 30,
+    "annual_salary": 48500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 168,
+    "gender": "Female",
+    "age": 24,
+    "annual_salary": 67500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 476,
+    "gender": "Female",
+    "age": 54,
+    "annual_salary": 136500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 951,
+    "gender": "Female",
+    "age": 53,
+    "annual_salary": 104000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 863,
+    "gender": "Male",
+    "age": 38,
+    "annual_salary": 59000,
+    "owns_the_car": 0
+  },
+  {
+    "id": 800,
+    "gender": "Female",
+    "age": 47,
+    "annual_salary": 23500,
+    "owns_the_car": 0
+  },
+  {
+    "id": 407,
+    "gender": "Female",
+    "age": 28,
+    "annual_salary": 138500,
+    "owns_the_car": 1
+  },
+  {
+    "id": 299,
+    "gender": "Female",
+    "age": 48,
+    "annual_salary": 134000,
+    "owns_the_car": 1
+  },
+  {
+    "id": 687,
+    "gender": "Female",
+    "age": 44,
+    "annual_salary": 73500,
+    "owns_the_car": 0
+  }
+]
