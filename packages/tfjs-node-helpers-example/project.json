@@ -1,0 +1,57 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tfjs-node-helpers-example/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/tfjs-node-helpers-example",
+        "main": "packages/tfjs-node-helpers-example/src/main.ts",
+        "tsConfig": "packages/tfjs-node-helpers-example/tsconfig.app.json",
+        "assets": ["packages/tfjs-node-helpers-example/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "packages/tfjs-node-helpers-example/src/environments/environment.ts",
+              "with": "packages/tfjs-node-helpers-example/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "tfjs-node-helpers-example:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "tfjs-node-helpers-example:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/tfjs-node-helpers-example/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/tfjs-node-helpers-example"],
+      "options": {
+        "jestConfig": "packages/tfjs-node-helpers-example/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "tfjs-node-helpers": "packages/tfjs-node-helpers",
+    "tfjs-node-helpers-example": "packages/tfjs-node-helpers-example"
+  }
+}
