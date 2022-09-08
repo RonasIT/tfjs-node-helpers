@@ -6,15 +6,11 @@ import {
   LayersModel,
   model,
   node,
-  onesLike,
   Optimizer,
   Scalar,
   SymbolicTensor,
   Tensor,
-  TensorContainer,
-  tidy,
-  where,
-  zerosLike
+  TensorContainer
 } from '@tensorflow/tfjs-node';
 import { green, red } from 'chalk';
 import { Table } from 'console-table-printer';
@@ -22,13 +18,14 @@ import { FeatureExtractor } from '../feature-engineering/feature-extractor';
 import { prepareDatasetsForBinaryClassification } from '../feature-engineering/prepare-datasets-for-binary-classification';
 import { ConfusionMatrix } from '../testing/confusion-matrix';
 import { Metrics } from '../testing/metrics';
+import { binarize } from '../utils/binarize';
 
 export type BinaryClassificationTrainerOptions = {
-  batchSize: number;
-  epochs: number;
-  patience: number;
-  inputFeatureExtractors: Array<FeatureExtractor<any, any>>;
-  outputFeatureExtractor: FeatureExtractor<any, any>;
+  batchSize?: number;
+  epochs?: number;
+  patience?: number;
+  inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
+  outputFeatureExtractor?: FeatureExtractor<any, any>;
   model?: LayersModel;
   hiddenLayers?: Array<layers.Layer>;
   optimizer?: string | Optimizer;
@@ -40,46 +37,23 @@ export class BinaryClassificationTrainer {
   protected epochs: number;
   protected patience: number;
   protected tensorBoardLogsDirectory?: string;
-  protected inputFeatureExtractors: Array<FeatureExtractor<any, any>>;
-  protected outputFeatureExtractor: FeatureExtractor<any, any>;
+  protected inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
+  protected outputFeatureExtractor?: FeatureExtractor<any, any>;
   protected model!: LayersModel;
 
+  protected static DEFAULT_BATCH_SIZE: number = 32;
+  protected static DEFAULT_EPOCHS: number = 1000;
+  protected static DEFAULT_PATIENCE: number = 20;
+
   constructor(options: BinaryClassificationTrainerOptions) {
-    this.batchSize = options.batchSize;
-    this.epochs = options.epochs;
-    this.patience = options.patience;
+    this.batchSize = options.batchSize ?? BinaryClassificationTrainer.DEFAULT_BATCH_SIZE;
+    this.epochs = options.epochs ?? BinaryClassificationTrainer.DEFAULT_EPOCHS;
+    this.patience = options.patience ?? BinaryClassificationTrainer.DEFAULT_PATIENCE;
     this.tensorBoardLogsDirectory = options.tensorBoardLogsDirectory;
     this.inputFeatureExtractors = options.inputFeatureExtractors;
     this.outputFeatureExtractor = options.outputFeatureExtractor;
 
-    if (options.model !== undefined) {
-      this.model = options.model;
-    } else {
-      if (options.hiddenLayers !== undefined && options.inputFeatureExtractors !== undefined) {
-        const inputLayer = input({ shape: [options.inputFeatureExtractors.length] });
-        let symbolicTensor = inputLayer;
-
-        options.hiddenLayers.forEach((layer) => {
-          symbolicTensor = layer.apply(symbolicTensor) as SymbolicTensor;
-        });
-
-        const outputLayer = layers
-          .dense({ units: 1, activation: 'sigmoid' })
-          .apply(symbolicTensor) as SymbolicTensor;
-
-        this.model = model({
-          inputs: inputLayer,
-          outputs: outputLayer
-        });
-      } else {
-        throw new Error('hiddenLayers and inputFeaturesCount options are required when the model is not provided!');
-      }
-    }
-
-    this.model.compile({
-      optimizer: options.optimizer ?? 'adam',
-      loss: 'binaryCrossentropy'
-    });
+    this.initializeModel(options);
   }
 
   public async trainAndTest({
@@ -87,13 +61,13 @@ export class BinaryClassificationTrainer {
     trainingDataset,
     validationDataset,
     testingDataset,
-    printResults
+    printTestingResults
   }: {
     data?: Array<any>,
     trainingDataset?: data.Dataset<TensorContainer>;
     validationDataset?: data.Dataset<TensorContainer>;
     testingDataset?: data.Dataset<TensorContainer>;
-    printResults?: boolean;
+    printTestingResults?: boolean;
   }): Promise<{
     loss: number;
     confusionMatrix: ConfusionMatrix;
@@ -111,7 +85,15 @@ export class BinaryClassificationTrainer {
       callbacks.push(node.tensorBoard(this.tensorBoardLogsDirectory));
     }
 
-    if (trainingDataset === undefined || validationDataset === undefined || testingDataset === undefined) {
+    if (
+      trainingDataset === undefined ||
+      validationDataset === undefined ||
+      testingDataset === undefined
+    ) {
+      if (this.inputFeatureExtractors === undefined || this.outputFeatureExtractor === undefined) {
+        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors and outputFeatureExtractor are not provided!');
+      }
+
       const datasets = await prepareDatasetsForBinaryClassification({
         data: data as Array<any>,
         inputFeatureExtractors: this.inputFeatureExtractors,
@@ -130,19 +112,50 @@ export class BinaryClassificationTrainer {
       callbacks
     });
 
-    return await this.test({ testingDataset, printResults });
+    return await this.test({ testingDataset, printTestingResults });
   }
 
   public async save(path: string): Promise<void> {
     await this.model.save(`file://${path}`);
   }
 
+  private initializeModel(options: BinaryClassificationTrainerOptions): void {
+    if (options.model !== undefined) {
+      this.model = options.model;
+    } else {
+      if (options.hiddenLayers !== undefined && options.inputFeatureExtractors !== undefined) {
+        const inputLayer = input({ shape: [options.inputFeatureExtractors.length] });
+        let symbolicTensor = inputLayer;
+
+        for (const layer of options.hiddenLayers) {
+          symbolicTensor = layer.apply(symbolicTensor) as SymbolicTensor;
+        }
+
+        const outputLayer = layers
+          .dense({ units: 1, activation: 'sigmoid' })
+          .apply(symbolicTensor) as SymbolicTensor;
+
+        this.model = model({
+          inputs: inputLayer,
+          outputs: outputLayer
+        });
+      } else {
+        throw new Error('hiddenLayers and inputFeatureExtractors options are required when the model is not provided!');
+      }
+    }
+
+    this.model.compile({
+      optimizer: options.optimizer ?? 'adam',
+      loss: 'binaryCrossentropy'
+    });
+  }
+
   private async test({
     testingDataset,
-    printResults
+    printTestingResults
   }: {
     testingDataset: data.Dataset<TensorContainer>;
-    printResults?: boolean;
+    printTestingResults?: boolean;
   }): Promise<{
     loss: number;
     confusionMatrix: ConfusionMatrix;
@@ -151,23 +164,24 @@ export class BinaryClassificationTrainer {
     const lossTensor = (await this.model.evaluateDataset(testingDataset as data.Dataset<any>, {})) as Scalar;
     const [loss] = await lossTensor.data();
 
-    const testingData = (await testingDataset.toArray()) as Array<{
+    const [testingData] = (await testingDataset.toArray()) as Array<{
       xs: Tensor;
       ys: Tensor;
     }>;
-    const testXs = testingData[0].xs;
-    const testYs = testingData[0].ys;
+
+    const testXs = testingData.xs;
+    const testYs = testingData.ys;
 
     const predictions = this.model.predict(testXs) as Tensor;
-    const binarizedPredictions = this.binarize(predictions);
+    const binarizedPredictions = binarize(predictions);
 
-    const trueValues = (await testYs.data()) as Float32Array;
-    const predictedValues = (await binarizedPredictions.data()) as Float32Array;
+    const trueValues = await testYs.data<'float32'>();
+    const predictedValues = await binarizedPredictions.data<'float32'>();
 
     const confusionMatrix = this.calculateConfusionMatrix(trueValues, predictedValues);
     const metrics = this.calculateMetrics(confusionMatrix);
 
-    if (printResults) {
+    if (printTestingResults) {
       this.printTestResults(loss, confusionMatrix, metrics);
     }
 
@@ -300,13 +314,5 @@ export class BinaryClassificationTrainer {
     });
 
     metricsTable.printTable();
-  }
-
-  private binarize(tensor: Tensor, threshold = 0.5): Tensor {
-    return tidy(() => {
-      const condition = tensor.greater(threshold);
-
-      return where(condition, onesLike(tensor), zerosLike(tensor));
-    });
   }
 }

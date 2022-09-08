@@ -115,14 +115,15 @@ then you can create the datasets for training, validation and testing manually,
 and pass them as the `trainingDataset`, `validationDataset` and `testingDataset`
 parameters.
 
-You can also print the testing results by setting the `printResults` to `true`.
+You can also print the testing results by setting the `printTestingResults` to
+`true`.
 
 An example can be found below:
 
 ```typescript
 await trainer.trainAndTest({
   data,
-  printResults: true
+  printTestingResults: true
 });
 ```
 
