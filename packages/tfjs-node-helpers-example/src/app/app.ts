@@ -7,20 +7,13 @@ import { OwnsTheCarFeatureExtractor } from './feature-extractors/owns-the-car';
 import { join } from 'node:path';
 import data from '../assets/data.json';
 
-const EPOCHS = 1000;
-const PATIENCE = 20;
-const BATCH_SIZE = 32;
-
-export async function startApplication() {
+export async function startApplication(): Promise<void> {
   await train();
   await predict();
 }
 
 async function train(): Promise<void> {
   const trainer = new BinaryClassificationTrainer({
-    batchSize: BATCH_SIZE,
-    epochs: EPOCHS,
-    patience: PATIENCE,
     hiddenLayers: [
       layers.dense({ units: 128, activation: 'mish' }),
       layers.dense({ units: 128, activation: 'mish' })
@@ -35,7 +28,7 @@ async function train(): Promise<void> {
 
   await trainer.trainAndTest({
     data,
-    printResults: true
+    printTestingResults: true
   });
 
   await trainer.save(join(__dirname, './trained_model'));
