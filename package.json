@@ -5,7 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@tensorflow/tfjs-node": "^3.20.0",
+    "@tensorflow/tfjs-node": "^3.21.1",
     "chalk": "^4.1.2",
     "console-table-printer": "^2.11.1",
     "tslib": "^2.3.0"
