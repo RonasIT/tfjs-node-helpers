@@ -4,13 +4,15 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nrwl/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/tfjs-node-helpers-example",
         "main": "packages/tfjs-node-helpers-example/src/main.ts",
         "tsConfig": "packages/tfjs-node-helpers-example/tsconfig.app.json",
-        "assets": ["packages/tfjs-node-helpers-example/src/assets"]
+        "assets": ["packages/tfjs-node-helpers-example/src/assets"],
+        "target": "node",
+        "compiler": "tsc"
       },
       "configurations": {
         "production": {
