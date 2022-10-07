@@ -1,5 +1,9 @@
 {
   "name": "@ronas-it/tfjs-node-helpers",
   "version": "1.0.0",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "console-table-printer": "^2.11.1"
+  }
 }
