@@ -166,6 +166,27 @@ of encoded inputs which will be fed into the model:
 const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 ```
 
+## Roadmap
+
+- [x] Binary classification ([#1](https://github.com/RonasIT/tfjs-node-helpers/pull/1))
+- [ ] Add an example of working with asynchronously loaded datasets ([#14](https://github.com/RonasIT/tfjs-node-helpers/issues/14))
+- [ ] Add an example of queued feature extraction and evaluation ([#12](https://github.com/RonasIT/tfjs-node-helpers/issues/12))
+- [ ] Add an example of storing the extracted features ([#13](https://github.com/RonasIT/tfjs-node-helpers/issues/13))
+- [ ] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
+- [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
+- [ ] Multiclass classification ([#3](https://github.com/RonasIT/tfjs-node-helpers/issues/3))
+- [ ] Regression ([#2](https://github.com/RonasIT/tfjs-node-helpers/issues/2))
+- [ ] Image classification ([#4](https://github.com/RonasIT/tfjs-node-helpers/issues/4))
+- [ ] Uncertainty ([#15](https://github.com/RonasIT/tfjs-node-helpers/issues/15))
+- [ ] Handle class imbalance problem ([#10](https://github.com/RonasIT/tfjs-node-helpers/issues/10))
+- [ ] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
+- [ ] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
+- [ ] Automated tests ([#6](https://github.com/RonasIT/tfjs-node-helpers/issues/6))
+- [ ] Continuous Integration ([#11](https://github.com/RonasIT/tfjs-node-helpers/issues/11))
+- [ ] Add more examples ([#8](https://github.com/RonasIT/tfjs-node-helpers/issues/8))
+- [ ] API reference ([#9](https://github.com/RonasIT/tfjs-node-helpers/issues/9))
+- [ ] Dashboard to visualize metrics over time ([#7](https://github.com/RonasIT/tfjs-node-helpers/issues/7))
+
 ## Contributing
 
 Thank you for considering contributing to `tfjs-node-helpers` library! The
