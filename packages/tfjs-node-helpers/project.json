@@ -22,7 +22,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/tfjs-node-helpers"],
+      "outputs": ["{workspaceRoot}/coverage/packages/tfjs-node-helpers"],
       "options": {
         "jestConfig": "packages/tfjs-node-helpers/jest.config.ts",
         "passWithNoTests": true
