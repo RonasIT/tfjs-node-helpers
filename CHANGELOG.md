@@ -1,3 +1,8 @@
+1.0.2 / 2022-10-27
+==================
+- Added changelog (https://github.com/RonasIT/tfjs-node-helpers/commit/88346bb33ecc244627e39d379675585c80bcb254)
+- Removed `private` flag from `package.json` (https://github.com/RonasIT/tfjs-node-helpers/commit/111f42115b833668b2f363c44e657a7f28d24e1f)
+
 1.0.1 / 2022-10-27
 ==================
 - Made `chalk` and `console-table-printer` dependencies of `@ronas-it/tfjs-node-helpers` (https://github.com/RonasIT/tfjs-node-helpers/commit/e96fcc628c9659484a785712fcf906b7fc457f45)
