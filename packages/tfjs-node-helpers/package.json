@@ -1,6 +1,6 @@
 {
   "name": "@ronas-it/tfjs-node-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "dependencies": {
     "chalk": "^4.1.2",
