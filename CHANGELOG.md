@@ -1,3 +1,7 @@
+1.0.3 / 2022-10-27
+==================
+- Added `private` flag back to `package.json` (https://github.com/RonasIT/tfjs-node-helpers/commit/c3c91d9d92ca2b6e04b6e93e0670bcc06a9ca2a5)
+
 1.0.2 / 2022-10-27
 ==================
 - Added changelog (https://github.com/RonasIT/tfjs-node-helpers/commit/88346bb33ecc244627e39d379675585c80bcb254)
