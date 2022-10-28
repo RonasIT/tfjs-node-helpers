@@ -6,3 +6,4 @@ export * from './feature-engineering/feature-extractor';
 export * from './feature-engineering/feature';
 export * from './feature-engineering/prepare-datasets-for-binary-classification';
 export * from './training/sample';
+export * from './utils/make-chunked-dataset';
