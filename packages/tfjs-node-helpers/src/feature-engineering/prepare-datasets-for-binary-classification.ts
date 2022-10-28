@@ -1,6 +1,6 @@
 import { data, TensorContainer } from '@tensorflow/tfjs-node';
 import { splitSamplesIntoTrainingValidationTestForBinaryClassification } from '../data-splitting/training-validation-test-for-binary-classification';
-import { makeDataset } from '../utils/make-dataset-from-array';
+import { makeDataset } from '../utils/make-dataset';
 import { FeatureExtractor } from './feature-extractor';
 
 export const prepareDatasetsForBinaryClassification = async <D, T>({
