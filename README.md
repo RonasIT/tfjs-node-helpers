@@ -127,6 +127,51 @@ await trainer.trainAndTest({
 });
 ```
 
+##### Loading data asynchronously
+
+When working with large dataset, you might find out that the whole dataset
+can't fit in memory. In this situation you might want to load the data in
+chunks. To do this, you can define the asynchronous generators for
+`trainingDataset`, `validationDataset` and `testingDataset`.
+
+This library provides the `makeChunkedDataset` helper to make it easier to
+create chunked datasets where chunks are controlled with `skip` and `take`
+parameters.
+
+`makeChunkedDataset` helper accepts the following parameters:
+
+- `loadChunk` – an asynchronous function accepting the numeric `skip` and `take`
+  parameters and returning an array of samples.
+- `chunkSize` – the number of samples loaded per chunk.
+- `batchSize` – the number of samples in each batch.
+
+```typescript
+const loadTrainingSamplesChunk = async (skip: number, take: number): Promise<Array<Sample>> => {
+  // Your samples chunk loading logic goes here. For example, you may want to
+  //   load samples from database, or from a remote data source.
+};
+
+const makeTrainingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
+  loadChunk: loadTrainingSamplesChunk,
+  chunkSize: 32,
+  batchSize: 32
+});
+
+// You should also define similar functions for validationDataset and
+//   trainingDataset. We omit this for the sake of brevity.
+
+const trainingDataset = makeTrainingDataset();
+const validationDataset = makeValidationDataset();
+const testingDataset = makeTestingDataset();
+
+await trainer.trainAndTest({
+  trainingDataset,
+  validationDataset,
+  testingDataset,
+  printTestingResults: true
+});
+```
+
 #### Saving the model
 
 To save the trained model, you need to call the `save` method of the
