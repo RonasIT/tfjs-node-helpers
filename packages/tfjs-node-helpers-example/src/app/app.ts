@@ -1,11 +1,11 @@
-import { BinaryClassificationTrainer, BinaryClassifier } from '@ronas-it/tfjs-node-helpers';
-import { layers } from '@tensorflow/tfjs-node';
+import { BinaryClassificationTrainer, BinaryClassifier, makeChunkedDataset } from '@ronas-it/tfjs-node-helpers';
+import { data, layers, TensorContainer } from '@tensorflow/tfjs-node';
 import { AgeFeatureExtractor } from './feature-extractors/age';
 import { AnnualSalaryFeatureExtractor } from './feature-extractors/annual-salary';
 import { GenderFeatureExtractor } from './feature-extractors/gender';
 import { OwnsTheCarFeatureExtractor } from './feature-extractors/owns-the-car';
 import { join } from 'node:path';
-import data from '../assets/data.json';
+import { TrainingDataService } from './services/training-data';
 
 export async function startApplication(): Promise<void> {
   await train();
@@ -26,8 +26,43 @@ async function train(): Promise<void> {
     outputFeatureExtractor: new OwnsTheCarFeatureExtractor()
   });
 
+  const trainingDataService = new TrainingDataService({
+    simulatedDelayMs: 100
+  });
+
+  await trainingDataService.initialize();
+
+  const [validationSamplesCount, testingSamplesCount] = await Promise.all([
+    trainingDataService.getValidationSamplesCount(),
+    trainingDataService.getTestingSamplesCount()
+  ]);
+
+  const makeTrainingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
+    loadChunk: (skip, take) => trainingDataService.getTrainingSamples(skip, take),
+    chunkSize: 32,
+    batchSize: 32
+  });
+
+  const makeValidationDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
+    loadChunk: (skip, take) => trainingDataService.getValidationSamples(skip, take),
+    chunkSize: 32,
+    batchSize: validationSamplesCount
+  });
+
+  const makeTestingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
+    loadChunk: (skip, take) => trainingDataService.getTestingSamples(skip, take),
+    chunkSize: 32,
+    batchSize: testingSamplesCount
+  });
+
+  const trainingDataset = makeTrainingDataset();
+  const validationDataset = makeValidationDataset();
+  const testingDataset = makeTestingDataset();
+
   await trainer.trainAndTest({
-    data,
+    trainingDataset,
+    validationDataset,
+    testingDataset,
     printTestingResults: true
   });
 
