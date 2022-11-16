@@ -1,3 +1,8 @@
+1.1.1 / 2022-11-16
+==================
+- Update `nx` to `v15.1.0` (https://github.com/RonasIT/tfjs-node-helpers/commit/a964b6e11d1cd9896b3737bb84934f800d136398)
+- Update `tslib` to `v2.4.1` (https://github.com/RonasIT/tfjs-node-helpers/commit/26f99465a509eb289bcca0f7cc160d868ed0db82)
+
 1.1.0 / 2022-10-31
 ==================
 - Load data asynchronously in the example application (https://github.com/RonasIT/tfjs-node-helpers/pull/21)
