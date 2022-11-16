@@ -1,4 +1,5 @@
 {
+  "name": "tfjs-node-helpers-example",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/tfjs-node-helpers-example/src",
   "projectType": "application",
