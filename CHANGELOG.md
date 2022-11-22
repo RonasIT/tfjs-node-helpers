@@ -1,3 +1,8 @@
+1.1.2 / 2022-11-22
+==================
+- Update `nx` to `v15.2.1` (https://github.com/RonasIT/tfjs-node-helpers/commit/56761007e106ead59ba8feff87e8f50e51b87aa7)
+- Update `@tensorflow/tfjs-node` to `v4.1.0` (https://github.com/RonasIT/tfjs-node-helpers/commit/357a6c85209b18651be44219205ee8530d622e72)
+
 1.1.1 / 2022-11-16
 ==================
 - Update `nx` to `v15.1.0` (https://github.com/RonasIT/tfjs-node-helpers/commit/a964b6e11d1cd9896b3737bb84934f800d136398)
