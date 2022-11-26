@@ -1,0 +1,62 @@
+{
+  "name": "tfjs-node-helpers-example-worker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tfjs-node-helpers-example-worker/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/packages/tfjs-node-helpers-example-worker",
+        "main": "packages/tfjs-node-helpers-example-worker/src/main.ts",
+        "tsConfig": "packages/tfjs-node-helpers-example-worker/tsconfig.app.json",
+        "assets": ["packages/tfjs-node-helpers-example-worker/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "packages/tfjs-node-helpers-example-worker/src/environments/environment.ts",
+              "with": "packages/tfjs-node-helpers-example-worker/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/js:node",
+      "options": {
+        "buildTarget": "tfjs-node-helpers-example-worker:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "tfjs-node-helpers-example-worker:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/tfjs-node-helpers-example-worker/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/tfjs-node-helpers-example-worker/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

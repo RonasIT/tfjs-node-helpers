@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "tfjs-node-helpers": "packages/tfjs-node-helpers",
-    "tfjs-node-helpers-example-master": "packages/tfjs-node-helpers-example-master"
+    "tfjs-node-helpers-example-master": "packages/tfjs-node-helpers-example-master",
+    "tfjs-node-helpers-example-worker": "packages/tfjs-node-helpers-example-worker"
   }
 }
