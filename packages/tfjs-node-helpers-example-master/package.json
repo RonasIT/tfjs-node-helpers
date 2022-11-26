@@ -1,0 +1,8 @@
+{
+  "name": "@ronas-it/tfjs-node-helpers-example-master",
+  "version": "1.1.2",
+  "type": "commonjs",
+  "dependencies": {
+    "bullmq": "^3.2.2"
+  }
+}
