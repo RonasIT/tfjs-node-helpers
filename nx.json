@@ -28,7 +28,7 @@
     "appsDir": "packages",
     "libsDir": "packages"
   },
-  "defaultProject": "tfjs-node-helpers-example",
+  "defaultProject": "tfjs-node-helpers-example-master",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "sharedGlobals": [],

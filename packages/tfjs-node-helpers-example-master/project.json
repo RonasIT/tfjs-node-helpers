@@ -1,0 +1,62 @@
+{
+  "name": "tfjs-node-helpers-example-master",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tfjs-node-helpers-example-master/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/tfjs-node-helpers-example-master",
+        "main": "packages/tfjs-node-helpers-example-master/src/main.ts",
+        "tsConfig": "packages/tfjs-node-helpers-example-master/tsconfig.app.json",
+        "assets": ["packages/tfjs-node-helpers-example-master/src/assets"],
+        "target": "node",
+        "compiler": "tsc"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "packages/tfjs-node-helpers-example-master/src/environments/environment.ts",
+              "with": "packages/tfjs-node-helpers-example-master/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "tfjs-node-helpers-example-master:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "tfjs-node-helpers-example-master:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/tfjs-node-helpers-example-master/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/packages/tfjs-node-helpers-example-master"
+      ],
+      "options": {
+        "jestConfig": "packages/tfjs-node-helpers-example-master/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

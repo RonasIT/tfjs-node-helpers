@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'tfjs-node-helpers-example',
+  displayName: 'tfjs-node-helpers-example-master',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -12,5 +12,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/tfjs-node-helpers-example',
+  coverageDirectory: '../../coverage/packages/tfjs-node-helpers-example-master',
 };
