@@ -1,9 +1,16 @@
-import { extractFeatures, Sample, splitSamplesIntoTrainingValidationTestForBinaryClassification } from '@ronas-it/tfjs-node-helpers';
+import {
+  extractFeatures,
+  normalizeFeatures,
+  Sample,
+  splitSamplesIntoTrainingValidationTestForBinaryClassification
+} from '@ronas-it/tfjs-node-helpers';
 import { AgeFeatureExtractor } from '../feature-extractors/age';
 import { AnnualSalaryFeatureExtractor } from '../feature-extractors/annual-salary';
 import { GenderFeatureExtractor } from '../feature-extractors/gender';
 import { OwnsTheCarFeatureExtractor } from '../feature-extractors/owns-the-car';
 import dataset from '../../assets/data.json';
+import { AgeMinMaxFeatureNormalizer } from '../feature-normalizers/age';
+import { AnnualSalaryMinMaxFeatureNormalizer } from '../feature-normalizers/annual-salary';
 
 export class TrainingDataService {
   private simulatedDelayMs: number;
@@ -16,7 +23,7 @@ export class TrainingDataService {
   }
 
   public async initialize(): Promise<void> {
-    const samples = await extractFeatures({
+    const extracts = await extractFeatures({
       data: dataset,
       inputFeatureExtractors: [
         new AgeFeatureExtractor(),
@@ -24,6 +31,14 @@ export class TrainingDataService {
         new GenderFeatureExtractor()
       ],
       outputFeatureExtractor: new OwnsTheCarFeatureExtractor()
+    });
+
+    const samples = await normalizeFeatures({
+      extracts,
+      inputFeatureNormalizers: [
+        new AgeMinMaxFeatureNormalizer(),
+        new AnnualSalaryMinMaxFeatureNormalizer()
+      ]
     });
 
     const { trainingSamples, validationSamples, testingSamples } = splitSamplesIntoTrainingValidationTestForBinaryClassification(samples);

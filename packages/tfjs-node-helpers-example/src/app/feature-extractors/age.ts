@@ -6,13 +6,10 @@ export class AgeFeatureExtractor extends FeatureExtractor<DatasetItem, FeatureTy
   public featureType = FeatureType.AGE;
 
   public extract(item: DatasetItem): Feature<FeatureType> {
-    const minAge = 18;
-    const maxAge = 63;
-
     return new Feature({
       type: this.featureType,
       label: `${item.age} years`,
-      value: (item.age - minAge) / (maxAge - minAge)
+      value: item.age
     });
   }
 }
