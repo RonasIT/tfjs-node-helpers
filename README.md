@@ -215,9 +215,9 @@ const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 
 - [x] Binary classification ([#1](https://github.com/RonasIT/tfjs-node-helpers/pull/1))
 - [x] Asynchronously loaded datasets ([#14](https://github.com/RonasIT/tfjs-node-helpers/issues/14))
+- [x] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
 - [ ] Add an example of queued feature extraction and evaluation ([#12](https://github.com/RonasIT/tfjs-node-helpers/issues/12))
 - [ ] Add an example of storing the extracted features ([#13](https://github.com/RonasIT/tfjs-node-helpers/issues/13))
-- [ ] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
 - [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
 - [ ] Multiclass classification ([#3](https://github.com/RonasIT/tfjs-node-helpers/issues/3))
 - [ ] Regression ([#2](https://github.com/RonasIT/tfjs-node-helpers/issues/2))
