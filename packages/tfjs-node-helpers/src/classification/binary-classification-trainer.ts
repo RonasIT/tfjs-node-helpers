@@ -19,6 +19,7 @@ import { prepareDatasetsForBinaryClassification } from '../feature-engineering/p
 import { ConfusionMatrix } from '../testing/confusion-matrix';
 import { Metrics } from '../testing/metrics';
 import { binarize } from '../utils/binarize';
+import { FeatureNormalizer } from '../feature-engineering/feature-normalizer';
 
 export type BinaryClassificationTrainerOptions = {
   batchSize?: number;
@@ -26,6 +27,7 @@ export type BinaryClassificationTrainerOptions = {
   patience?: number;
   inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
   outputFeatureExtractor?: FeatureExtractor<any, any>;
+  inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
   model?: LayersModel;
   hiddenLayers?: Array<layers.Layer>;
   optimizer?: string | Optimizer;
@@ -39,6 +41,7 @@ export class BinaryClassificationTrainer {
   protected tensorBoardLogsDirectory?: string;
   protected inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
   protected outputFeatureExtractor?: FeatureExtractor<any, any>;
+  protected inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
   protected model!: LayersModel;
 
   protected static DEFAULT_BATCH_SIZE: number = 32;
@@ -52,6 +55,7 @@ export class BinaryClassificationTrainer {
     this.tensorBoardLogsDirectory = options.tensorBoardLogsDirectory;
     this.inputFeatureExtractors = options.inputFeatureExtractors;
     this.outputFeatureExtractor = options.outputFeatureExtractor;
+    this.inputFeatureNormalizers = options.inputFeatureNormalizers;
 
     this.initializeModel(options);
   }
@@ -63,7 +67,7 @@ export class BinaryClassificationTrainer {
     testingDataset,
     printTestingResults
   }: {
-    data?: Array<any>,
+    data?: Array<any>;
     trainingDataset?: data.Dataset<TensorContainer>;
     validationDataset?: data.Dataset<TensorContainer>;
     testingDataset?: data.Dataset<TensorContainer>;
@@ -90,14 +94,19 @@ export class BinaryClassificationTrainer {
       validationDataset === undefined ||
       testingDataset === undefined
     ) {
-      if (this.inputFeatureExtractors === undefined || this.outputFeatureExtractor === undefined) {
-        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors and outputFeatureExtractor are not provided!');
+      if (
+        this.inputFeatureExtractors === undefined ||
+        this.outputFeatureExtractor === undefined ||
+        this.inputFeatureNormalizers === undefined
+      ) {
+        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors, outputFeatureExtractor and inputFeatureNormalizers are not provided!');
       }
 
       const datasets = await prepareDatasetsForBinaryClassification({
         data: data as Array<any>,
         inputFeatureExtractors: this.inputFeatureExtractors,
         outputFeatureExtractor: this.outputFeatureExtractor,
+        inputFeatureNormalizers: this.inputFeatureNormalizers,
         batchSize: this.batchSize
       });
 

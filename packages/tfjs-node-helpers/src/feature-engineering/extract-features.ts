@@ -1,5 +1,10 @@
-import { Sample } from '../training/sample';
 import { FeatureExtractor } from './feature-extractor';
+import { Feature } from './feature';
+
+export type DataItemExtract<T> = {
+  inputFeatures: Array<Feature<T>>;
+  outputFeature: Feature<T>;
+};
 
 export const extractFeatures = async <D, T>({
   data,
@@ -9,8 +14,8 @@ export const extractFeatures = async <D, T>({
   data: Array<D>;
   inputFeatureExtractors: Array<FeatureExtractor<D, T>>;
   outputFeatureExtractor: FeatureExtractor<D, T>;
-}): Promise<Array<Sample>> => {
-  const samples = [];
+}): Promise<Array<DataItemExtract<T>>> => {
+  const extracts = [];
 
   for (const dataItem of data) {
     const [inputFeatures, outputFeature] = await Promise.all([
@@ -22,11 +27,8 @@ export const extractFeatures = async <D, T>({
       outputFeatureExtractor.extract(dataItem)
     ]);
 
-    const input = inputFeatures.map((feature) => feature.value);
-    const output = [outputFeature.value];
-
-    samples.push({ input, output });
+    extracts.push({ inputFeatures, outputFeature });
   }
 
-  return samples;
+  return extracts;
 }

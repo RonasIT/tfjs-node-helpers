@@ -6,13 +6,10 @@ export class AnnualSalaryFeatureExtractor extends FeatureExtractor<DatasetItem, 
   public featureType = FeatureType.ANNUAL_SALARY;
 
   public extract(item: DatasetItem): Feature<FeatureType> {
-    const minAnnualSalary = 15000;
-    const maxAnnualSalary = 152500;
-
     return new Feature({
       type: this.featureType,
       label: item.annual_salary.toString(),
-      value: (item.annual_salary - minAnnualSalary) / (maxAnnualSalary - minAnnualSalary)
+      value: item.annual_salary
     });
   }
 }

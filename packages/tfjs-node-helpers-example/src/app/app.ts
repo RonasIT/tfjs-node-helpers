@@ -6,6 +6,8 @@ import { GenderFeatureExtractor } from './feature-extractors/gender';
 import { OwnsTheCarFeatureExtractor } from './feature-extractors/owns-the-car';
 import { join } from 'node:path';
 import { TrainingDataService } from './services/training-data';
+import { AgeMinMaxFeatureNormalizer } from './feature-normalizers/age';
+import { AnnualSalaryMinMaxFeatureNormalizer } from './feature-normalizers/annual-salary';
 
 export async function startApplication(): Promise<void> {
   await train();
@@ -23,7 +25,11 @@ async function train(): Promise<void> {
       new AnnualSalaryFeatureExtractor(),
       new GenderFeatureExtractor()
     ],
-    outputFeatureExtractor: new OwnsTheCarFeatureExtractor()
+    outputFeatureExtractor: new OwnsTheCarFeatureExtractor(),
+    inputFeatureNormalizers: [
+      new AgeMinMaxFeatureNormalizer(),
+      new AnnualSalaryMinMaxFeatureNormalizer()
+    ]
   });
 
   const trainingDataService = new TrainingDataService({

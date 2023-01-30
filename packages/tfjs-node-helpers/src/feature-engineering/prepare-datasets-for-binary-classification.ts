@@ -3,11 +3,14 @@ import { splitSamplesIntoTrainingValidationTestForBinaryClassification } from '.
 import { makeDataset } from '../utils/make-dataset';
 import { extractFeatures } from './extract-features';
 import { FeatureExtractor } from './feature-extractor';
+import { FeatureNormalizer } from './feature-normalizer';
+import { normalizeFeatures } from './normalize-features';
 
 export const prepareDatasetsForBinaryClassification = async <D, T>({
   data,
   inputFeatureExtractors,
   outputFeatureExtractor,
+  inputFeatureNormalizers,
   batchSize,
   trainingPercentage,
   validationPercentage,
@@ -16,6 +19,7 @@ export const prepareDatasetsForBinaryClassification = async <D, T>({
   data: Array<D>;
   inputFeatureExtractors: Array<FeatureExtractor<D, T>>;
   outputFeatureExtractor: FeatureExtractor<D, T>;
+  inputFeatureNormalizers: Array<FeatureNormalizer<T>>;
   batchSize: number;
   trainingPercentage?: number;
   validationPercentage?: number;
@@ -25,10 +29,15 @@ export const prepareDatasetsForBinaryClassification = async <D, T>({
   validationDataset: data.Dataset<TensorContainer>;
   testingDataset: data.Dataset<TensorContainer>;
 }> => {
-  const samples = await extractFeatures({
+  const extracts = await extractFeatures({
     data,
     inputFeatureExtractors,
     outputFeatureExtractor
+  });
+
+  const samples = await normalizeFeatures({
+    extracts,
+    inputFeatureNormalizers
   });
 
   const { trainingSamples, validationSamples, testingSamples } = splitSamplesIntoTrainingValidationTestForBinaryClassification(
