@@ -52,4 +52,4 @@ export const prepareDatasetsForBinaryClassification = async <D, T>({
   const testingDataset = makeDataset(testingSamples);
 
   return { trainingDataset, validationDataset, testingDataset };
-}
+};
