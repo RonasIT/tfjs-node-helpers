@@ -16,8 +16,10 @@ import { green, red } from 'chalk';
 import { Table } from 'console-table-printer';
 import { FeatureExtractor } from '../feature-engineering/feature-extractor';
 import { prepareDatasetsForBinaryClassification } from '../feature-engineering/prepare-datasets-for-binary-classification';
+import { calculateMetrics } from '../testing/calculate-metrics';
 import { ConfusionMatrix } from '../testing/confusion-matrix';
-import { Metrics } from '../testing/metrics';
+import { Metric } from '../testing/metric';
+import { MetricCalculator } from '../testing/metric-calculator';
 import { binarize } from '../utils/binarize';
 import { FeatureNormalizer } from '../feature-engineering/feature-normalizer';
 
@@ -32,6 +34,7 @@ export type BinaryClassificationTrainerOptions = {
   hiddenLayers?: Array<layers.Layer>;
   optimizer?: string | Optimizer;
   tensorBoardLogsDirectory?: string;
+  metricCalculators?: Array<MetricCalculator>;
 };
 
 export class BinaryClassificationTrainer {
@@ -43,6 +46,7 @@ export class BinaryClassificationTrainer {
   protected outputFeatureExtractor?: FeatureExtractor<any, any>;
   protected inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
   protected model!: LayersModel;
+  protected metricCalculators: Array<MetricCalculator>;
 
   protected static DEFAULT_BATCH_SIZE: number = 32;
   protected static DEFAULT_EPOCHS: number = 1000;
@@ -56,6 +60,7 @@ export class BinaryClassificationTrainer {
     this.inputFeatureExtractors = options.inputFeatureExtractors;
     this.outputFeatureExtractor = options.outputFeatureExtractor;
     this.inputFeatureNormalizers = options.inputFeatureNormalizers;
+    this.metricCalculators = options.metricCalculators || [];
 
     this.initializeModel(options);
   }
@@ -75,31 +80,31 @@ export class BinaryClassificationTrainer {
   }): Promise<{
     loss: number;
     confusionMatrix: ConfusionMatrix;
-    metrics: Metrics;
+    metrics: Array<Metric>;
   }> {
     const callbacks = [];
 
     if (this.patience !== undefined) {
-      callbacks.push(tensorflowCallbacks.earlyStopping({
-        patience: this.patience
-      }));
+      callbacks.push(
+        tensorflowCallbacks.earlyStopping({
+          patience: this.patience
+        })
+      );
     }
 
     if (this.tensorBoardLogsDirectory !== undefined) {
       callbacks.push(node.tensorBoard(this.tensorBoardLogsDirectory));
     }
 
-    if (
-      trainingDataset === undefined ||
-      validationDataset === undefined ||
-      testingDataset === undefined
-    ) {
+    if (trainingDataset === undefined || validationDataset === undefined || testingDataset === undefined) {
       if (
         this.inputFeatureExtractors === undefined ||
         this.outputFeatureExtractor === undefined ||
         this.inputFeatureNormalizers === undefined
       ) {
-        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors, outputFeatureExtractor and inputFeatureNormalizers are not provided!');
+        throw new Error(
+          'trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors, outputFeatureExtractor and inputFeatureNormalizers are not provided!'
+        );
       }
 
       const datasets = await prepareDatasetsForBinaryClassification({
@@ -133,16 +138,16 @@ export class BinaryClassificationTrainer {
       this.model = options.model;
     } else {
       if (options.hiddenLayers !== undefined && options.inputFeatureExtractors !== undefined) {
-        const inputLayer = input({ shape: [options.inputFeatureExtractors.length] });
+        const inputLayer = input({
+          shape: [options.inputFeatureExtractors.length]
+        });
         let symbolicTensor = inputLayer;
 
         for (const layer of options.hiddenLayers) {
           symbolicTensor = layer.apply(symbolicTensor) as SymbolicTensor;
         }
 
-        const outputLayer = layers
-          .dense({ units: 1, activation: 'sigmoid' })
-          .apply(symbolicTensor) as SymbolicTensor;
+        const outputLayer = layers.dense({ units: 1, activation: 'sigmoid' }).apply(symbolicTensor) as SymbolicTensor;
 
         this.model = model({
           inputs: inputLayer,
@@ -168,7 +173,7 @@ export class BinaryClassificationTrainer {
   }): Promise<{
     loss: number;
     confusionMatrix: ConfusionMatrix;
-    metrics: Metrics;
+    metrics: Array<Metric>;
   }> {
     const lossTensor = (await this.model.evaluateDataset(testingDataset as data.Dataset<any>, {})) as Scalar;
     const [loss] = await lossTensor.data();
@@ -187,8 +192,12 @@ export class BinaryClassificationTrainer {
     const trueValues = await testYs.data<'float32'>();
     const predictedValues = await binarizedPredictions.data<'float32'>();
 
-    const confusionMatrix = this.calculateConfusionMatrix(trueValues, predictedValues);
-    const metrics = this.calculateMetrics(confusionMatrix);
+    const confusionMatrix = new ConfusionMatrix(trueValues, predictedValues);
+    const metrics = calculateMetrics({
+      trueValues,
+      predictedValues,
+      metricCalculators: this.metricCalculators
+    });
 
     if (printTestingResults) {
       this.printTestResults(loss, confusionMatrix, metrics);
@@ -197,51 +206,7 @@ export class BinaryClassificationTrainer {
     return { loss, confusionMatrix, metrics };
   }
 
-  private calculateConfusionMatrix(trueValues: Float32Array, predictedValues: Float32Array): ConfusionMatrix {
-    let tp = 0;
-    let tn = 0;
-    let fp = 0;
-    let fn = 0;
-
-    for (let index = 0; index < trueValues.length; index++) {
-      const trueValue = trueValues[index];
-      const predictedValue = predictedValues[index];
-
-      if (trueValue === 1 && predictedValue === 1) {
-        tp++;
-      } else if (trueValue === 0 && predictedValue === 0) {
-        tn++;
-      } else if (trueValue === 0 && predictedValue === 1) {
-        fp++;
-      } else {
-        fn++;
-      }
-    }
-
-    return { tp, tn, fp, fn };
-  }
-
-  private calculateMetrics({ fp, fn, tp, tn }: ConfusionMatrix): Metrics {
-    const accuracy = (tp + tn) / (tp + tn + fp + fn);
-    const precision = tp / (tp + fp);
-    const recall = tp / (tp + fn);
-    const f1 = (2 * precision * recall) / (precision + recall);
-    const specificity = tn / (tn + fp);
-    const fpr = fp / (fp + tn);
-    const fnr = fn / (fn + tp);
-
-    return {
-      accuracy,
-      precision,
-      recall,
-      f1,
-      specificity,
-      fpr,
-      fnr
-    };
-  }
-
-  private printTestResults(loss: number, confusionMatrix: ConfusionMatrix, metrics: Metrics): void {
+  private printTestResults(loss: number, confusionMatrix: ConfusionMatrix, metrics: Array<Metric>): void {
     console.log('\n');
     this.printConfusionMatrixTable(confusionMatrix);
     console.log('\n');
@@ -273,7 +238,7 @@ export class BinaryClassificationTrainer {
     confusionMatrixTable.printTable();
   }
 
-  private printMetricsTable(loss: number, metrics: Metrics): void {
+  private printMetricsTable(loss: number, metrics: Array<Metric>): void {
     const metricsTable = new Table({
       title: 'Metrics',
       columns: [
@@ -287,40 +252,12 @@ export class BinaryClassificationTrainer {
       value: loss.toFixed(4)
     });
 
-    metricsTable.addRow({
-      metric: 'Accuracy',
-      value: metrics.accuracy.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'Precision',
-      value: metrics.precision.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'Recall',
-      value: metrics.recall.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'F1 Score',
-      value: metrics.f1.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'Specificity',
-      value: metrics.specificity.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'FPR',
-      value: metrics.fpr.toFixed(4)
-    });
-
-    metricsTable.addRow({
-      metric: 'FNR',
-      value: metrics.fnr.toFixed(4)
-    });
+    metrics.forEach((metric) =>
+      metricsTable.addRow({
+        metric: metric.title,
+        value: metric.value.toFixed(4)
+      })
+    );
 
     metricsTable.printTable();
   }

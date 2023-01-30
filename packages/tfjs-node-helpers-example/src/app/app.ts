@@ -1,4 +1,15 @@
-import { BinaryClassificationTrainer, BinaryClassifier, makeChunkedDataset } from '@ronas-it/tfjs-node-helpers';
+import {
+  AccuracyMetricCalculator,
+  BinaryClassificationTrainer,
+  BinaryClassifier,
+  F1ScoreMetricCalculator,
+  FNRMetricCalculator,
+  FPRMetricCalculator,
+  makeChunkedDataset,
+  PrecisionMetricCalculator,
+  RecallMetricCalculator,
+  SpecificityMetricCalculator
+} from '@ronas-it/tfjs-node-helpers';
 import { data, layers, TensorContainer } from '@tensorflow/tfjs-node';
 import { AgeFeatureExtractor } from './feature-extractors/age';
 import { AnnualSalaryFeatureExtractor } from './feature-extractors/annual-salary';
@@ -16,10 +27,7 @@ export async function startApplication(): Promise<void> {
 
 async function train(): Promise<void> {
   const trainer = new BinaryClassificationTrainer({
-    hiddenLayers: [
-      layers.dense({ units: 128, activation: 'mish' }),
-      layers.dense({ units: 128, activation: 'mish' })
-    ],
+    hiddenLayers: [layers.dense({ units: 128, activation: 'mish' }), layers.dense({ units: 128, activation: 'mish' })],
     inputFeatureExtractors: [
       new AgeFeatureExtractor(),
       new AnnualSalaryFeatureExtractor(),
@@ -29,6 +37,15 @@ async function train(): Promise<void> {
     inputFeatureNormalizers: [
       new AgeMinMaxFeatureNormalizer(),
       new AnnualSalaryMinMaxFeatureNormalizer()
+    ],
+    metricCalculators: [
+      new AccuracyMetricCalculator(),
+      new PrecisionMetricCalculator(),
+      new F1ScoreMetricCalculator(),
+      new SpecificityMetricCalculator(),
+      new RecallMetricCalculator(),
+      new FNRMetricCalculator(),
+      new FPRMetricCalculator()
     ]
   });
 
@@ -43,23 +60,26 @@ async function train(): Promise<void> {
     trainingDataService.getTestingSamplesCount()
   ]);
 
-  const makeTrainingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getTrainingSamples(skip, take),
-    chunkSize: 32,
-    batchSize: 32
-  });
+  const makeTrainingDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getTrainingSamples(skip, take),
+      chunkSize: 32,
+      batchSize: 32
+    });
 
-  const makeValidationDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getValidationSamples(skip, take),
-    chunkSize: 32,
-    batchSize: validationSamplesCount
-  });
+  const makeValidationDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getValidationSamples(skip, take),
+      chunkSize: 32,
+      batchSize: validationSamplesCount
+    });
 
-  const makeTestingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getTestingSamples(skip, take),
-    chunkSize: 32,
-    batchSize: testingSamplesCount
-  });
+  const makeTestingDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getTestingSamples(skip, take),
+      chunkSize: 32,
+      batchSize: testingSamplesCount
+    });
 
   const trainingDataset = makeTrainingDataset();
   const validationDataset = makeValidationDataset();
