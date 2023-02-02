@@ -2,6 +2,7 @@ import { Task } from '../core/task';
 
 export type ComposeOptions = {
   tasks: Array<Task>;
+  mode: 'collapse' | 'merge' | 'retarget';
   outputFeatures?: Array<Task>;
 };
 
