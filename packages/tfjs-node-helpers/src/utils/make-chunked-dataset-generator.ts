@@ -9,7 +9,7 @@ export const makeChunkedDatasetGenerator = async function* ({
   chunkSize: number
 }): AsyncGenerator<{ xs: Tensor, ys: Tensor }> {
   let skip = 0;
-  let take = chunkSize;
+  const take = chunkSize;
 
   while (true) {
     const samples = await loadChunk(skip, take);

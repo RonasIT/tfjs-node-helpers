@@ -27,9 +27,9 @@ export type BinaryClassificationTrainerOptions = {
   batchSize?: number;
   epochs?: number;
   patience?: number;
-  inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
-  outputFeatureExtractor?: FeatureExtractor<any, any>;
-  inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
+  inputFeatureExtractors?: Array<FeatureExtractor<unknown, unknown>>;
+  outputFeatureExtractor?: FeatureExtractor<unknown, unknown>;
+  inputFeatureNormalizers?: Array<FeatureNormalizer<unknown>>;
   model?: LayersModel;
   hiddenLayers?: Array<layers.Layer>;
   optimizer?: string | Optimizer;
@@ -42,9 +42,9 @@ export class BinaryClassificationTrainer {
   protected epochs: number;
   protected patience: number;
   protected tensorBoardLogsDirectory?: string;
-  protected inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
-  protected outputFeatureExtractor?: FeatureExtractor<any, any>;
-  protected inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
+  protected inputFeatureExtractors?: Array<FeatureExtractor<unknown, unknown>>;
+  protected outputFeatureExtractor?: FeatureExtractor<unknown, unknown>;
+  protected inputFeatureNormalizers?: Array<FeatureNormalizer<unknown>>;
   protected model!: LayersModel;
   protected metricCalculators: Array<MetricCalculator>;
 
@@ -72,7 +72,7 @@ export class BinaryClassificationTrainer {
     testingDataset,
     printTestingResults
   }: {
-    data?: Array<any>;
+    data?: Array<unknown>;
     trainingDataset?: data.Dataset<TensorContainer>;
     validationDataset?: data.Dataset<TensorContainer>;
     testingDataset?: data.Dataset<TensorContainer>;
@@ -108,7 +108,7 @@ export class BinaryClassificationTrainer {
       }
 
       const datasets = await prepareDatasetsForBinaryClassification({
-        data: data as Array<any>,
+        data: data as Array<unknown>,
         inputFeatureExtractors: this.inputFeatureExtractors,
         outputFeatureExtractor: this.outputFeatureExtractor,
         inputFeatureNormalizers: this.inputFeatureNormalizers,

@@ -6,4 +6,4 @@ export const makeDataset = (samples: Array<Sample>, batchSize: number = samples.
   const ys = data.array(samples.map((sample) => sample.output));
 
   return data.zip({ xs, ys }).batch(batchSize);
-}
+};

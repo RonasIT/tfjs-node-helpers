@@ -1,6 +1,6 @@
 // This is an utility method implementing the Durstenfeld shuffle algorithm.
 // For more details, see: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm
-export function shuffle<T = any>(array: Array<T>): Array<T> {
+export function shuffle<T>(array: Array<T>): Array<T> {
   array = array.slice(0);
 
   for (let i = array.length - 1; i > 0; i--) {
