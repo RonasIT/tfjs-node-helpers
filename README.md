@@ -258,6 +258,7 @@ const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 - [x] Asynchronously loaded datasets ([#14](https://github.com/RonasIT/tfjs-node-helpers/issues/14))
 - [x] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
 - [x] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
+- [ ] Task-oriented architecture ([#26](https://github.com/RonasIT/tfjs-node-helpers/issues/26))
 - [ ] Add an example of queued feature extraction and evaluation ([#12](https://github.com/RonasIT/tfjs-node-helpers/issues/12))
 - [ ] Add an example of storing the extracted features ([#13](https://github.com/RonasIT/tfjs-node-helpers/issues/13))
 - [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
