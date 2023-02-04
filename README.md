@@ -17,7 +17,7 @@ Before you start using the helpers in your project, you need to install the
 [@ronas-it/tfjs-node-helpers][7] package:
 
 ```bash
-> npm install @ronas-it/tfjs-node-helpers --save
+npm install @ronas-it/tfjs-node-helpers --save
 ```
 
 ## Usage
