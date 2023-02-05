@@ -2,13 +2,20 @@ import {
   AccuracyMetricCalculator,
   BinaryClassificationTrainer,
   BinaryClassifier,
-  F1ScoreMetricCalculator,
+  BrierLossMetricCalculator,
   FNRMetricCalculator,
   FPRMetricCalculator,
+  BinaryCrossentropyMetricCalculator,
   makeChunkedDataset,
+  PRAUCMetricCalculator,
   PrecisionMetricCalculator,
   RecallMetricCalculator,
-  SpecificityMetricCalculator
+  ROCAUCMetricCalculator,
+  SpecificityMetricCalculator,
+  CohenKappaMetricCalculator,
+  NPVMetricCalculator,
+  MCCMetricCalculator,
+  FBetaScoreMetricCalculator
 } from '@ronas-it/tfjs-node-helpers';
 import { data, layers, TensorContainer } from '@tensorflow/tfjs-node';
 import { AgeFeatureExtractor } from './feature-extractors/age';
@@ -34,18 +41,23 @@ async function train(): Promise<void> {
       new GenderFeatureExtractor()
     ],
     outputFeatureExtractor: new OwnsTheCarFeatureExtractor(),
-    inputFeatureNormalizers: [
-      new AgeMinMaxFeatureNormalizer(),
-      new AnnualSalaryMinMaxFeatureNormalizer()
-    ],
+    inputFeatureNormalizers: [new AgeMinMaxFeatureNormalizer(), new AnnualSalaryMinMaxFeatureNormalizer()],
     metricCalculators: [
       new AccuracyMetricCalculator(),
       new PrecisionMetricCalculator(),
-      new F1ScoreMetricCalculator(),
+      new FBetaScoreMetricCalculator(1),
       new SpecificityMetricCalculator(),
       new RecallMetricCalculator(),
       new FNRMetricCalculator(),
-      new FPRMetricCalculator()
+      new FPRMetricCalculator(),
+      new NPVMetricCalculator(),
+      new MCCMetricCalculator(),
+      new FBetaScoreMetricCalculator(2),
+      new ROCAUCMetricCalculator(),
+      new PRAUCMetricCalculator(),
+      new BrierLossMetricCalculator(),
+      new BinaryCrossentropyMetricCalculator(),
+      new CohenKappaMetricCalculator()
     ]
   });
 

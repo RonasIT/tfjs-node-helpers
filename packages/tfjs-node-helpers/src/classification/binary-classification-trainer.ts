@@ -189,13 +189,13 @@ export class BinaryClassificationTrainer {
     const predictions = this.model.predict(testXs) as Tensor;
     const binarizedPredictions = binarize(predictions);
 
-    const trueValues = await testYs.data<'float32'>();
-    const predictedValues = await binarizedPredictions.data<'float32'>();
-
-    const confusionMatrix = new ConfusionMatrix(trueValues, predictedValues);
+    const confusionMatrix = new ConfusionMatrix(testYs, binarizedPredictions);
     const metrics = calculateMetrics({
-      trueValues,
-      predictedValues,
+      testingResult: {
+        trueValues: testYs,
+        predictedValues: binarizedPredictions,
+        probabilities: predictions
+      },
       metricCalculators: this.metricCalculators
     });
 

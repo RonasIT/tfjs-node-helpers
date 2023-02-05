@@ -3,11 +3,11 @@ import { Metric } from '../metric';
 import { MetricCalculator } from '../metric-calculator';
 import { TestingResult } from '../result';
 
-export class PrecisionMetricCalculator extends MetricCalculator {
-  public calculate({ trueValues, predictedValues }: TestingResult): Metric {
+export class BrierLossMetricCalculator extends MetricCalculator {
+  public calculate({ trueValues, probabilities }: TestingResult): Metric {
     const trueY = trueValues.as1D();
-    const predY = predictedValues.as1D();
-    const valueTensor = metrics.precision(trueY, predY);
+    const predY = probabilities.as1D();
+    const valueTensor = metrics.MSE(trueY, predY);
 
     trueY.dispose();
     predY.dispose();
@@ -17,7 +17,7 @@ export class PrecisionMetricCalculator extends MetricCalculator {
     valueTensor.dispose();
 
     return new Metric({
-      title: 'Precision',
+      title: 'Brier Loss',
       value
     });
   }
