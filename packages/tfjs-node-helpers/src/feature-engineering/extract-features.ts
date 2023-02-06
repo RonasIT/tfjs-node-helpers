@@ -27,4 +27,4 @@ export const extractFeatures = async <D, T>({
   }
 
   return samples;
-}
+};
