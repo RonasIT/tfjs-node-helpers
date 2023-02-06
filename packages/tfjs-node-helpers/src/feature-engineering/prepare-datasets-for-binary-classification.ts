@@ -2,24 +2,20 @@ import { data, TensorContainer } from '@tensorflow/tfjs-node';
 import { splitSamplesIntoTrainingValidationTestForBinaryClassification } from '../data-splitting/training-validation-test-for-binary-classification';
 import { makeDataset } from '../utils/make-dataset';
 import { extractFeatures } from './extract-features';
-import { FeatureExtractor } from './feature-extractor';
-import { FeatureNormalizer } from './feature-normalizer';
-import { normalizeFeatures } from './normalize-features';
+import { FeatureEngineer } from './feature-engineer';
 
 export const prepareDatasetsForBinaryClassification = async <D, T>({
   data,
-  inputFeatureExtractors,
-  outputFeatureExtractor,
-  inputFeatureNormalizers,
+  inputFeatureEngineers,
+  outputFeatureEngineer,
   batchSize,
   trainingPercentage,
   validationPercentage,
   testingPercentage
 }: {
   data: Array<D>;
-  inputFeatureExtractors: Array<FeatureExtractor<D, T>>;
-  outputFeatureExtractor: FeatureExtractor<D, T>;
-  inputFeatureNormalizers: Array<FeatureNormalizer<T>>;
+  inputFeatureEngineers: Array<FeatureEngineer<T, D>>;
+  outputFeatureEngineer: FeatureEngineer<T, D>;
   batchSize: number;
   trainingPercentage?: number;
   validationPercentage?: number;
@@ -29,15 +25,10 @@ export const prepareDatasetsForBinaryClassification = async <D, T>({
   validationDataset: data.Dataset<TensorContainer>;
   testingDataset: data.Dataset<TensorContainer>;
 }> => {
-  const extracts = await extractFeatures({
+  const samples = await extractFeatures({
     data,
-    inputFeatureExtractors,
-    outputFeatureExtractor
-  });
-
-  const samples = await normalizeFeatures({
-    extracts,
-    inputFeatureNormalizers
+    inputFeatureEngineers,
+    outputFeatureEngineer
   });
 
   const { trainingSamples, validationSamples, testingSamples } = splitSamplesIntoTrainingValidationTestForBinaryClassification(

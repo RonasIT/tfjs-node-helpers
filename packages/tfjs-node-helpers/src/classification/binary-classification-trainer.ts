@@ -14,20 +14,18 @@ import {
 } from '@tensorflow/tfjs-node';
 import { green, red } from 'chalk';
 import { Table } from 'console-table-printer';
-import { FeatureExtractor } from '../feature-engineering/feature-extractor';
+import { FeatureEngineer } from '../feature-engineering/feature-engineer';
 import { prepareDatasetsForBinaryClassification } from '../feature-engineering/prepare-datasets-for-binary-classification';
 import { ConfusionMatrix } from '../testing/confusion-matrix';
 import { Metrics } from '../testing/metrics';
 import { binarize } from '../utils/binarize';
-import { FeatureNormalizer } from '../feature-engineering/feature-normalizer';
 
 export type BinaryClassificationTrainerOptions = {
   batchSize?: number;
   epochs?: number;
   patience?: number;
-  inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
-  outputFeatureExtractor?: FeatureExtractor<any, any>;
-  inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
+  inputFeatureEngineers?: Array<FeatureEngineer<any, any>>;
+  outputFeatureEngineer?: FeatureEngineer<any, any>;
   model?: LayersModel;
   hiddenLayers?: Array<layers.Layer>;
   optimizer?: string | Optimizer;
@@ -39,9 +37,8 @@ export class BinaryClassificationTrainer {
   protected epochs: number;
   protected patience: number;
   protected tensorBoardLogsDirectory?: string;
-  protected inputFeatureExtractors?: Array<FeatureExtractor<any, any>>;
-  protected outputFeatureExtractor?: FeatureExtractor<any, any>;
-  protected inputFeatureNormalizers?: Array<FeatureNormalizer<any>>;
+  protected inputFeatureEngineers?: Array<FeatureEngineer<any, any>>;
+  protected outputFeatureEngineer?: FeatureEngineer<any, any>;
   protected model!: LayersModel;
 
   protected static DEFAULT_BATCH_SIZE: number = 32;
@@ -53,9 +50,8 @@ export class BinaryClassificationTrainer {
     this.epochs = options.epochs ?? BinaryClassificationTrainer.DEFAULT_EPOCHS;
     this.patience = options.patience ?? BinaryClassificationTrainer.DEFAULT_PATIENCE;
     this.tensorBoardLogsDirectory = options.tensorBoardLogsDirectory;
-    this.inputFeatureExtractors = options.inputFeatureExtractors;
-    this.outputFeatureExtractor = options.outputFeatureExtractor;
-    this.inputFeatureNormalizers = options.inputFeatureNormalizers;
+    this.inputFeatureEngineers = options.inputFeatureEngineers;
+    this.outputFeatureEngineer = options.outputFeatureEngineer;
 
     this.initializeModel(options);
   }
@@ -94,19 +90,14 @@ export class BinaryClassificationTrainer {
       validationDataset === undefined ||
       testingDataset === undefined
     ) {
-      if (
-        this.inputFeatureExtractors === undefined ||
-        this.outputFeatureExtractor === undefined ||
-        this.inputFeatureNormalizers === undefined
-      ) {
-        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureExtractors, outputFeatureExtractor and inputFeatureNormalizers are not provided!');
+      if (this.inputFeatureEngineers === undefined || this.outputFeatureEngineer === undefined) {
+        throw new Error('trainingDataset, validationDataset and testingDataset are required when inputFeatureEngineers and outputFeatureEngineer are not provided!');
       }
 
       const datasets = await prepareDatasetsForBinaryClassification({
         data: data as Array<any>,
-        inputFeatureExtractors: this.inputFeatureExtractors,
-        outputFeatureExtractor: this.outputFeatureExtractor,
-        inputFeatureNormalizers: this.inputFeatureNormalizers,
+        inputFeatureEngineers: this.inputFeatureEngineers,
+        outputFeatureEngineer: this.outputFeatureEngineer,
         batchSize: this.batchSize
       });
 
@@ -132,8 +123,8 @@ export class BinaryClassificationTrainer {
     if (options.model !== undefined) {
       this.model = options.model;
     } else {
-      if (options.hiddenLayers !== undefined && options.inputFeatureExtractors !== undefined) {
-        const inputLayer = input({ shape: [options.inputFeatureExtractors.length] });
+      if (options.hiddenLayers !== undefined && options.inputFeatureEngineers !== undefined) {
+        const inputLayer = input({ shape: [options.inputFeatureEngineers.length] });
         let symbolicTensor = inputLayer;
 
         for (const layer of options.hiddenLayers) {

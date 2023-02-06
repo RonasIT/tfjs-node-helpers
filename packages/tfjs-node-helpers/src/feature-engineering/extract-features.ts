@@ -1,34 +1,30 @@
-import { FeatureExtractor } from './feature-extractor';
-import { Feature } from './feature';
-
-export type DataItemExtract<T> = {
-  inputFeatures: Array<Feature<T>>;
-  outputFeature: Feature<T>;
-};
+import { FeatureEngineer } from './feature-engineer';
+import { Sample } from '../training/sample';
 
 export const extractFeatures = async <D, T>({
   data,
-  inputFeatureExtractors,
-  outputFeatureExtractor
+  inputFeatureEngineers,
+  outputFeatureEngineer
 }: {
   data: Array<D>;
-  inputFeatureExtractors: Array<FeatureExtractor<D, T>>;
-  outputFeatureExtractor: FeatureExtractor<D, T>;
-}): Promise<Array<DataItemExtract<T>>> => {
-  const extracts = [];
+  inputFeatureEngineers: Array<FeatureEngineer<T, D>>;
+  outputFeatureEngineer: FeatureEngineer<T, D>;
+}): Promise<Array<Sample>> => {
+  const samples = [];
 
-  for (const dataItem of data) {
+  for (let i = 0; i < data.length; i++) {
     const [inputFeatures, outputFeature] = await Promise.all([
       Promise.all(
-        inputFeatureExtractors.map((featureExtractor) => {
-          return featureExtractor.extract(dataItem);
-        })
+        inputFeatureEngineers.map((engineer) => engineer.extractFeature({ data, index: i }))
       ),
-      outputFeatureExtractor.extract(dataItem)
+      outputFeatureEngineer.extractFeature({ data, index: i })
     ]);
 
-    extracts.push({ inputFeatures, outputFeature });
+    const input = inputFeatures.map((feature) => feature.value);
+    const output = [outputFeature.value];
+
+    samples.push({ input, output });
   }
 
-  return extracts;
+  return samples;
 }

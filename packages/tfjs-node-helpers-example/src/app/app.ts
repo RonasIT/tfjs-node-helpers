@@ -1,13 +1,11 @@
 import { BinaryClassificationTrainer, BinaryClassifier, makeChunkedDataset } from '@ronas-it/tfjs-node-helpers';
 import { data, layers, TensorContainer } from '@tensorflow/tfjs-node';
-import { AgeFeatureExtractor } from './feature-extractors/age';
-import { AnnualSalaryFeatureExtractor } from './feature-extractors/annual-salary';
-import { GenderFeatureExtractor } from './feature-extractors/gender';
-import { OwnsTheCarFeatureExtractor } from './feature-extractors/owns-the-car';
+import { AgeFeatureEngineer } from './feature-engineers/age';
+import { AnnualSalaryFeatureEngineer } from './feature-engineers/annual-salary';
+import { GenderFeatureEngineer } from './feature-engineers/gender';
+import { OwnsTheCarFeatureEngineer } from './feature-engineers/owns-the-car';
 import { join } from 'node:path';
 import { TrainingDataService } from './services/training-data';
-import { AgeMinMaxFeatureNormalizer } from './feature-normalizers/age';
-import { AnnualSalaryMinMaxFeatureNormalizer } from './feature-normalizers/annual-salary';
 
 export async function startApplication(): Promise<void> {
   await train();
@@ -20,16 +18,12 @@ async function train(): Promise<void> {
       layers.dense({ units: 128, activation: 'mish' }),
       layers.dense({ units: 128, activation: 'mish' })
     ],
-    inputFeatureExtractors: [
-      new AgeFeatureExtractor(),
-      new AnnualSalaryFeatureExtractor(),
-      new GenderFeatureExtractor()
+    inputFeatureEngineers: [
+      new AgeFeatureEngineer(),
+      new AnnualSalaryFeatureEngineer(),
+      new GenderFeatureEngineer()
     ],
-    outputFeatureExtractor: new OwnsTheCarFeatureExtractor(),
-    inputFeatureNormalizers: [
-      new AgeMinMaxFeatureNormalizer(),
-      new AnnualSalaryMinMaxFeatureNormalizer()
-    ]
+    outputFeatureEngineer: new OwnsTheCarFeatureEngineer()
   });
 
   const trainingDataService = new TrainingDataService({

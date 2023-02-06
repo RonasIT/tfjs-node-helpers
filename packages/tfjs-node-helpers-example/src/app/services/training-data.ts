@@ -1,16 +1,13 @@
 import {
   extractFeatures,
-  normalizeFeatures,
   Sample,
   splitSamplesIntoTrainingValidationTestForBinaryClassification
 } from '@ronas-it/tfjs-node-helpers';
-import { AgeFeatureExtractor } from '../feature-extractors/age';
-import { AnnualSalaryFeatureExtractor } from '../feature-extractors/annual-salary';
-import { GenderFeatureExtractor } from '../feature-extractors/gender';
-import { OwnsTheCarFeatureExtractor } from '../feature-extractors/owns-the-car';
+import { AgeFeatureEngineer } from '../feature-engineers/age';
+import { AnnualSalaryFeatureEngineer } from '../feature-engineers/annual-salary';
+import { GenderFeatureEngineer } from '../feature-engineers/gender';
+import { OwnsTheCarFeatureEngineer } from '../feature-engineers/owns-the-car';
 import dataset from '../../assets/data.json';
-import { AgeMinMaxFeatureNormalizer } from '../feature-normalizers/age';
-import { AnnualSalaryMinMaxFeatureNormalizer } from '../feature-normalizers/annual-salary';
 
 export class TrainingDataService {
   private simulatedDelayMs: number;
@@ -23,22 +20,14 @@ export class TrainingDataService {
   }
 
   public async initialize(): Promise<void> {
-    const extracts = await extractFeatures({
+    const samples = await extractFeatures({
       data: dataset,
-      inputFeatureExtractors: [
-        new AgeFeatureExtractor(),
-        new AnnualSalaryFeatureExtractor(),
-        new GenderFeatureExtractor()
+      inputFeatureEngineers: [
+        new AgeFeatureEngineer(),
+        new AnnualSalaryFeatureEngineer(),
+        new GenderFeatureEngineer()
       ],
-      outputFeatureExtractor: new OwnsTheCarFeatureExtractor()
-    });
-
-    const samples = await normalizeFeatures({
-      extracts,
-      inputFeatureNormalizers: [
-        new AgeMinMaxFeatureNormalizer(),
-        new AnnualSalaryMinMaxFeatureNormalizer()
-      ]
+      outputFeatureEngineer: new OwnsTheCarFeatureEngineer()
     });
 
     const { trainingSamples, validationSamples, testingSamples } = splitSamplesIntoTrainingValidationTestForBinaryClassification(samples);
