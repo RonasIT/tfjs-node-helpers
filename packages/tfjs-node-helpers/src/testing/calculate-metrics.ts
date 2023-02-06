@@ -1,12 +1,11 @@
 import { Metric } from './metric';
 import { MetricCalculator } from './metric-calculator';
+import { TestingResult } from './result';
 
 export const calculateMetrics = ({
-  trueValues,
-  predictedValues,
+  testingResult,
   metricCalculators
 }: {
-  trueValues: Float32Array;
-  predictedValues: Float32Array;
+  testingResult: TestingResult;
   metricCalculators: Array<MetricCalculator>;
-}): Array<Metric> => metricCalculators.map((calculator) => calculator.calculate(trueValues, predictedValues));
+}): Array<Metric> => metricCalculators.map((calculator) => calculator.calculate(testingResult));

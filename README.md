@@ -72,9 +72,16 @@ We have a list of built-in metric calculators for popular metrics:
 - PrecisionMetricCalculator
 - RecallMetricCalculator
 - SpecificityMetricCalculator
-- F1ScoreMetricCalculator
 - FNRMetricCalculator
 - FPRMetricCalculator
+- NPVMetricCalculator
+- MCCMetricCalculator
+- FBetaScoreMetricCalculator
+- ROCAUCMetricCalculator
+- PRAUCMetricCalculator
+- BrierLossMetricCalculator
+- BinaryCrossentropyMetricCalculator
+- CohenKappaMetricCalculator
 
 You can implement your own `MetricCalculator`. In the example below, we define
 a metric calculator for `precision`. For that we create a `PrecisionMetricCalculator`
@@ -82,8 +89,8 @@ class extending the `MetricCalculator` base class provided by the library and
 implementing `calculate` method.
 
 ```typescript
-class PrecisionMetricCalculator extends MetricCalculator {
-  public calculate(trueValues: Float32Array, predictedValues: Float32Array): Metric {
+export class PrecisionMetricCalculator extends MetricCalculator {
+  public calculate({ trueValues, predictedValues }: TestingResult): Metric {
     const { tp, fp } = new ConfusionMatrix(trueValues, predictedValues);
 
     return new Metric({
@@ -258,7 +265,7 @@ const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 - [x] Asynchronously loaded datasets ([#14](https://github.com/RonasIT/tfjs-node-helpers/issues/14))
 - [x] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
 - [x] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
-- [ ] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
+- [x] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
 - [ ] Refactor features ([#25](https://github.com/RonasIT/tfjs-node-helpers/issues/25))
 - [ ] Task-oriented architecture ([#26](https://github.com/RonasIT/tfjs-node-helpers/issues/26))
 - [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
