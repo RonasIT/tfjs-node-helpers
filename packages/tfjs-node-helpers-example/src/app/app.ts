@@ -1,4 +1,22 @@
-import { BinaryClassificationTrainer, BinaryClassifier, makeChunkedDataset } from '@ronas-it/tfjs-node-helpers';
+import {
+  AccuracyMetricCalculator,
+  BinaryClassificationTrainer,
+  BinaryClassifier,
+  BrierLossMetricCalculator,
+  FNRMetricCalculator,
+  FPRMetricCalculator,
+  BinaryCrossentropyMetricCalculator,
+  makeChunkedDataset,
+  PRAUCMetricCalculator,
+  PrecisionMetricCalculator,
+  RecallMetricCalculator,
+  ROCAUCMetricCalculator,
+  SpecificityMetricCalculator,
+  CohenKappaMetricCalculator,
+  NPVMetricCalculator,
+  MCCMetricCalculator,
+  FBetaScoreMetricCalculator
+} from '@ronas-it/tfjs-node-helpers';
 import { data, layers, TensorContainer } from '@tensorflow/tfjs-node';
 import { AgeFeatureEngineer } from './feature-engineers/age';
 import { AnnualSalaryFeatureEngineer } from './feature-engineers/annual-salary';
@@ -14,16 +32,30 @@ export async function startApplication(): Promise<void> {
 
 async function train(): Promise<void> {
   const trainer = new BinaryClassificationTrainer({
-    hiddenLayers: [
-      layers.dense({ units: 128, activation: 'mish' }),
-      layers.dense({ units: 128, activation: 'mish' })
-    ],
+    hiddenLayers: [layers.dense({ units: 128, activation: 'mish' }), layers.dense({ units: 128, activation: 'mish' })],
     inputFeatureEngineers: [
       new AgeFeatureEngineer(),
       new AnnualSalaryFeatureEngineer(),
       new GenderFeatureEngineer()
     ],
-    outputFeatureEngineer: new OwnsTheCarFeatureEngineer()
+    outputFeatureEngineer: new OwnsTheCarFeatureEngineer(),
+    metricCalculators: [
+      new AccuracyMetricCalculator(),
+      new PrecisionMetricCalculator(),
+      new FBetaScoreMetricCalculator(1),
+      new SpecificityMetricCalculator(),
+      new RecallMetricCalculator(),
+      new FNRMetricCalculator(),
+      new FPRMetricCalculator(),
+      new NPVMetricCalculator(),
+      new MCCMetricCalculator(),
+      new FBetaScoreMetricCalculator(2),
+      new ROCAUCMetricCalculator(),
+      new PRAUCMetricCalculator(),
+      new BrierLossMetricCalculator(),
+      new BinaryCrossentropyMetricCalculator(),
+      new CohenKappaMetricCalculator()
+    ]
   });
 
   const trainingDataService = new TrainingDataService({
@@ -37,23 +69,26 @@ async function train(): Promise<void> {
     trainingDataService.getTestingSamplesCount()
   ]);
 
-  const makeTrainingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getTrainingSamples(skip, take),
-    chunkSize: 32,
-    batchSize: 32
-  });
+  const makeTrainingDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getTrainingSamples(skip, take),
+      chunkSize: 32,
+      batchSize: 32
+    });
 
-  const makeValidationDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getValidationSamples(skip, take),
-    chunkSize: 32,
-    batchSize: validationSamplesCount
-  });
+  const makeValidationDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getValidationSamples(skip, take),
+      chunkSize: 32,
+      batchSize: validationSamplesCount
+    });
 
-  const makeTestingDataset = (): data.Dataset<TensorContainer> => makeChunkedDataset({
-    loadChunk: (skip, take) => trainingDataService.getTestingSamples(skip, take),
-    chunkSize: 32,
-    batchSize: testingSamplesCount
-  });
+  const makeTestingDataset = (): data.Dataset<TensorContainer> =>
+    makeChunkedDataset({
+      loadChunk: (skip, take) => trainingDataService.getTestingSamples(skip, take),
+      chunkSize: 32,
+      batchSize: testingSamplesCount
+    });
 
   const trainingDataset = makeTrainingDataset();
   const validationDataset = makeValidationDataset();

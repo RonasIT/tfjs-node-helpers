@@ -17,7 +17,7 @@ Before you start using the helpers in your project, you need to install the
 [@ronas-it/tfjs-node-helpers][7] package:
 
 ```bash
-> npm install @ronas-it/tfjs-node-helpers --save
+npm install @ronas-it/tfjs-node-helpers --save
 ```
 
 ## Usage
@@ -60,6 +60,47 @@ class GenderFeatureExtractor extends FeatureExtractor<DatasetItem, FeatureType> 
 That's it! Now we can use the defined feature extractor to extract valuable
 information from our dataset.
 
+### Metrics
+
+After your model has been trained it's important to evaluate it.
+One way to do this is by analyzing *metrics*.
+The library helps measure model performance by passing a list of
+metric calculators to the model trainer.
+
+We have a list of built-in metric calculators for popular metrics:
+- AccuracyMetricCalculator
+- PrecisionMetricCalculator
+- RecallMetricCalculator
+- SpecificityMetricCalculator
+- FNRMetricCalculator
+- FPRMetricCalculator
+- NPVMetricCalculator
+- MCCMetricCalculator
+- FBetaScoreMetricCalculator
+- ROCAUCMetricCalculator
+- PRAUCMetricCalculator
+- BrierLossMetricCalculator
+- BinaryCrossentropyMetricCalculator
+- CohenKappaMetricCalculator
+
+You can implement your own `MetricCalculator`. In the example below, we define
+a metric calculator for `precision`. For that we create a `PrecisionMetricCalculator`
+class extending the `MetricCalculator` base class provided by the library and
+implementing `calculate` method.
+
+```typescript
+export class PrecisionMetricCalculator extends MetricCalculator {
+  public calculate({ trueValues, predictedValues }: TestingResult): Metric {
+    const { tp, fp } = new ConfusionMatrix(trueValues, predictedValues);
+
+    return new Metric({
+      title: 'Precision',
+      value: tp / (tp + fp)
+    });
+  }
+}
+```
+
 ### Binary classification
 
 This library provides two classes to train and evaluate binary classification
@@ -83,6 +124,7 @@ Before training the model, you need to create an instance of the
   that should be fed into the model as inputs.
 - `outputFeatureExtractor` – the feature extractor to extract information that
   we want to predict.
+- `metricCalculators` – a list of metric calculators that will be used during test stage.
 
 An example can be found below:
 
@@ -100,7 +142,13 @@ const trainer = new BinaryClassificationTrainer({
     new AnnualSalaryFeatureExtractor(),
     new GenderFeatureExtractor()
   ],
-  outputFeatureExtractor: new OwnsTheCarFeatureExtractor()
+  outputFeatureExtractor: new OwnsTheCarFeatureExtractor(),
+  metricCalculators: [
+    new AccuracyMetricCalculator(),
+    new PrecisionMetricCalculator(),
+    new SpecificityMetricCalculator(),
+    new FPRMetricCalculator()
+  ]
 });
 ```
 
@@ -216,18 +264,21 @@ const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 - [x] Binary classification ([#1](https://github.com/RonasIT/tfjs-node-helpers/pull/1))
 - [x] Asynchronously loaded datasets ([#14](https://github.com/RonasIT/tfjs-node-helpers/issues/14))
 - [x] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
-- [ ] Add an example of queued feature extraction and evaluation ([#12](https://github.com/RonasIT/tfjs-node-helpers/issues/12))
-- [ ] Add an example of storing the extracted features ([#13](https://github.com/RonasIT/tfjs-node-helpers/issues/13))
+- [x] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
+- [x] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
+- [ ] Refactor features ([#25](https://github.com/RonasIT/tfjs-node-helpers/issues/25))
+- [ ] Task-oriented architecture ([#26](https://github.com/RonasIT/tfjs-node-helpers/issues/26))
 - [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
 - [ ] Multiclass classification ([#3](https://github.com/RonasIT/tfjs-node-helpers/issues/3))
-- [ ] Regression ([#2](https://github.com/RonasIT/tfjs-node-helpers/issues/2))
 - [ ] Image classification ([#4](https://github.com/RonasIT/tfjs-node-helpers/issues/4))
+- [ ] Regression ([#2](https://github.com/RonasIT/tfjs-node-helpers/issues/2))
+- [ ] Object detection ([#27](https://github.com/RonasIT/tfjs-node-helpers/issues/27))
 - [ ] Uncertainty ([#15](https://github.com/RonasIT/tfjs-node-helpers/issues/15))
 - [ ] Handle class imbalance problem ([#10](https://github.com/RonasIT/tfjs-node-helpers/issues/10))
-- [ ] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
-- [ ] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
 - [ ] Automated tests ([#6](https://github.com/RonasIT/tfjs-node-helpers/issues/6))
 - [ ] Continuous Integration ([#11](https://github.com/RonasIT/tfjs-node-helpers/issues/11))
+- [ ] Add an example of queued feature extraction and evaluation ([#12](https://github.com/RonasIT/tfjs-node-helpers/issues/12))
+- [ ] Add an example of storing the extracted features ([#13](https://github.com/RonasIT/tfjs-node-helpers/issues/13))
 - [ ] Add more examples ([#8](https://github.com/RonasIT/tfjs-node-helpers/issues/8))
 - [ ] API reference ([#9](https://github.com/RonasIT/tfjs-node-helpers/issues/9))
 - [ ] Dashboard to visualize metrics over time ([#7](https://github.com/RonasIT/tfjs-node-helpers/issues/7))

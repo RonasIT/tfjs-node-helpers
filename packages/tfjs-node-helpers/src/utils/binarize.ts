@@ -1,6 +1,6 @@
-import { onesLike, Tensor, tidy, where, zerosLike } from '@tensorflow/tfjs-node';
+import { onesLike, Rank, Tensor, tidy, where, zerosLike } from '@tensorflow/tfjs-node';
 
-export const binarize = (tensor: Tensor, threshold = 0.5): Tensor => tidy(
+export const binarize = <R extends Rank = Rank>(tensor: Tensor<R>, threshold = 0.5): Tensor<R> => tidy(
   () => where(
     tensor.greater(threshold),
     onesLike(tensor),
