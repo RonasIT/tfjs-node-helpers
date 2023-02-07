@@ -266,7 +266,7 @@ const ownsTheCar = await classifier.predict([0.2, 0.76, 0]);
 - [x] Feature normalization ([#5](https://github.com/RonasIT/tfjs-node-helpers/issues/5))
 - [x] Custom metrics ([#18](https://github.com/RonasIT/tfjs-node-helpers/issues/18))
 - [x] Add more metrics ([#17](https://github.com/RonasIT/tfjs-node-helpers/issues/17))
-- [ ] Refactor features ([#25](https://github.com/RonasIT/tfjs-node-helpers/issues/25))
+- [ ] Allow using GPU ([#29](https://github.com/RonasIT/tfjs-node-helpers/issues/29))
 - [ ] Task-oriented architecture ([#26](https://github.com/RonasIT/tfjs-node-helpers/issues/26))
 - [ ] Categorical features ([#19](https://github.com/RonasIT/tfjs-node-helpers/issues/19))
 - [ ] Multiclass classification ([#3](https://github.com/RonasIT/tfjs-node-helpers/issues/3))
