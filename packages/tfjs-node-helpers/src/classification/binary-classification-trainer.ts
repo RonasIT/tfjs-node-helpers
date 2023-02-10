@@ -22,8 +22,10 @@ import { Metric } from '../testing/metric';
 import { MetricCalculator } from '../testing/metric-calculator';
 import { binarize } from '../utils/binarize';
 import { FeatureNormalizer } from '../feature-engineering/feature-normalizer';
+import { switchHardwareUsage } from '../utils/switch-hardware-usage';
 
 export type BinaryClassificationTrainerOptions = {
+  shouldUseGPU?: boolean;
   batchSize?: number;
   epochs?: number;
   patience?: number;
@@ -53,6 +55,8 @@ export class BinaryClassificationTrainer {
   protected static DEFAULT_PATIENCE: number = 20;
 
   constructor(options: BinaryClassificationTrainerOptions) {
+    switchHardwareUsage(options.shouldUseGPU);
+
     this.batchSize = options.batchSize ?? BinaryClassificationTrainer.DEFAULT_BATCH_SIZE;
     this.epochs = options.epochs ?? BinaryClassificationTrainer.DEFAULT_EPOCHS;
     this.patience = options.patience ?? BinaryClassificationTrainer.DEFAULT_PATIENCE;
