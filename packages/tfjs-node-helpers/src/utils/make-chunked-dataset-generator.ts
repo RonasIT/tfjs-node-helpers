@@ -1,4 +1,4 @@
-import { Tensor, tensor } from '@tensorflow/tfjs-node';
+import { TensorContainer } from '@tensorflow/tfjs-node';
 import { Sample } from '../training/sample';
 
 export const makeChunkedDatasetGenerator = async function* ({
@@ -7,7 +7,7 @@ export const makeChunkedDatasetGenerator = async function* ({
 }: {
   loadChunk: (skip: number, take: number) => Promise<Array<Sample>>,
   chunkSize: number
-}): AsyncGenerator<{ xs: Tensor, ys: Tensor }> {
+}): AsyncGenerator<{ xs: TensorContainer, ys: TensorContainer }> {
   let skip = 0;
   const take = chunkSize;
 
@@ -16,8 +16,8 @@ export const makeChunkedDatasetGenerator = async function* ({
 
     for (const sample of samples) {
       yield {
-        xs: tensor(sample.input),
-        ys: tensor(sample.output)
+        xs: sample.input,
+        ys: sample.output
       };
     }
 

@@ -1,6 +1,7 @@
 import { FeatureNormalizer } from './feature-normalizer';
 import { Sample } from '../training/sample';
 import { DataItemExtract } from './extract-features';
+import { TensorContainerObject } from '@tensorflow/tfjs-node';
 
 export const normalizeFeatures = async <T>({
   extracts,
@@ -20,8 +21,12 @@ export const normalizeFeatures = async <T>({
       })
     );
 
-    const input = inputNormalizedFeatures.map((feature) => feature.value);
-    const output = [extractItem.outputFeature.value];
+    const input: TensorContainerObject = inputNormalizedFeatures.reduce((input, feature) => {
+      input[feature.id] = feature.value;
+
+      return input;
+    }, {} as TensorContainerObject);
+    const output: TensorContainerObject = { [extractItem.outputFeature.id]: extractItem.outputFeature.value };
 
     samples.push({ input, output });
   }

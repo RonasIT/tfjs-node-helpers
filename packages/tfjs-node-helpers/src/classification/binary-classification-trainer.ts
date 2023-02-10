@@ -138,25 +138,29 @@ export class BinaryClassificationTrainer {
       this.model = options.model;
     } else {
       if (options.hiddenLayers !== undefined && options.inputFeatureExtractors !== undefined) {
-        const inputLayer = input({
-          shape: [options.inputFeatureExtractors.length]
-        });
-        let symbolicTensor = inputLayer;
+        const inputLayers = options.inputFeatureExtractors.map((extractor) => input({
+          shape: [1],
+          name: String(extractor.featureType)
+        }));
+
+        let symbolicTensor = layers.concatenate().apply(inputLayers) as SymbolicTensor;
 
         for (const layer of options.hiddenLayers) {
           symbolicTensor = layer.apply(symbolicTensor) as SymbolicTensor;
         }
 
-        const outputLayer = layers.dense({ units: 1, activation: 'sigmoid' }).apply(symbolicTensor) as SymbolicTensor;
+        const outputLayer = layers.dense({ units: 1, activation: 'sigmoid', name: String(this.outputFeatureExtractor?.featureType) }).apply(symbolicTensor) as SymbolicTensor;
+
 
         this.model = model({
-          inputs: inputLayer,
+          inputs: inputLayers,
           outputs: outputLayer
         });
       } else {
         throw new Error('hiddenLayers and inputFeatureExtractors options are required when the model is not provided!');
       }
     }
+
 
     this.model.compile({
       optimizer: options.optimizer ?? 'adam',
@@ -185,6 +189,9 @@ export class BinaryClassificationTrainer {
 
     const testXs = testingData.xs;
     const testYs = testingData.ys;
+
+    console.log(testXs);
+
 
     const predictions = this.model.predict(testXs) as Tensor;
     const binarizedPredictions = binarize(predictions);

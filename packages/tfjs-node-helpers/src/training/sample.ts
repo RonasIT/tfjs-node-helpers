@@ -1,4 +1,6 @@
+import { TensorContainerObject } from "@tensorflow/tfjs-node";
+
 export type Sample = {
-  input: Array<number>;
-  output: Array<number>;
+  input: TensorContainerObject;
+  output: TensorContainerObject;
 };
